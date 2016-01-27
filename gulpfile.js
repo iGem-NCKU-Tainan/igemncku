@@ -47,7 +47,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('scss', function() {
-  return gulp.src(['./scss/**/*.scss'])
+  return gulp.src(['./scss/**/*.scss', './scss/**/*.css'])
   .pipe(sourcemaps.init())
   .pipe(sass(sassOptions).on('error', sass.logError))
   .pipe(autoprefixer({
@@ -62,6 +62,12 @@ gulp.task('scss', function() {
 gulp.task('watch', function () {
   gulp.watch(['./js/**/*.js'], ['scripts']);
   gulp.watch('./scss/**/*.scss', ['scss']);
+  gulp.watch(['./images/**/*.jpg', './images/**/*.png'], ['image'])
 });
 
-gulp.task('default', ['scripts',  'scss','watch']);
+gulp.task('image', function () {
+  return gulp.src(['./images/**/*.jpg', './images/**/*.png'])
+  .pipe(gulp.dest('./public/images/'));
+});
+
+gulp.task('default', ['scripts',  'scss', 'image', 'watch']);

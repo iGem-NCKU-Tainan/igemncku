@@ -2,10 +2,31 @@
   <head>
     {{> head}}
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/slider-pro/slider-pro.min.css"/>
   </head>
   <body>
     {{> header }}
 
+    <div class="slider-pro" id="my-slider">
+      <div class="sp-slides">
+        <div class="sp-slide">
+          <img class="sp-image" src="./images/slide.jpg"/>
+        </div>
+
+        <div class="sp-slide">
+          <img class="sp-image" src="./images/slide.jpg"/>
+        </div>
+
+        <div class="sp-slide">
+          <img class="sp-image" src="./images/slide.jpg"/>
+        </div>
+
+      </div>
+    </div>
+
+
     {{> footer }}
-   </body>
+    <script src="./js/slider-pro/jquery.sliderPro.min.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
 </html>

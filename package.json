@@ -4,8 +4,7 @@
   "private": true,
   "description": "",
   "main": "./lib/index.js",
-  "directories": {
-  },
+  "directories": {},
   "scripts": {},
   "author": "",
   "license": "",
@@ -20,10 +19,11 @@
     "gulp-watch": "~4.1.0"
   },
   "dependencies": {
-    "gulp-minify-html": "^1.0.4",
-    "gulp-rename": "^1.2.2",
     "canner-core": "0.3.0",
     "fs-extra": "^0.23.0",
-    "minimist": "^1.1.3"
+    "gulp-minify-html": "^1.0.4",
+    "gulp-rename": "^1.2.2",
+    "minimist": "^1.1.3",
+    "slider-pro": "^1.2.3"
   }
 }
