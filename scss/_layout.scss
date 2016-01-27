@@ -2,5 +2,11 @@
 @import "./_nav";
 
 html, body {
+  color: #42413E;
   background: $bg-color;
+  font-family: 'Noto Sans', "微軟雅黑","Microsoft YaHei", Helvetica, 'sans-serif';
+}
+
+body {
+  padding-top: 20px;
 }
