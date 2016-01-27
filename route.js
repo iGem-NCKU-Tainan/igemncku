@@ -26,8 +26,8 @@ route = [
     "img": "",
     "description": "",
     "partials": './partials.js',
-    "layout":  "./view/member/index.hbs",
-    "filename": "./public/memeber/index.html"
+    "layout":  "./view/team/index.hbs",
+    "filename": "./public/team/index.html"
   },
   {
     "title": "iGem NCKU 聯絡我們",
