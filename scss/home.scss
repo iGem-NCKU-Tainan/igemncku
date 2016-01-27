@@ -16,25 +16,6 @@
   }
 }
 
-.title{
-	padding: 0 10%;
-	font-size: 2em;
-	text-align: center;
-	font-weight: bold;
-	color: $purple;
-
-	.underline {
-		margin: 3px auto;
-		color: $orange;
-		width: 50px;
-		border-style: solid;
-		border-width: 2px;
-		border-radius: 3px;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-	}
-}
-
 .container{
 	width: 80%;
 	margin: 0 auto;
