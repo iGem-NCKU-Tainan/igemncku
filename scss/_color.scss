@@ -2,5 +2,28 @@ $bg-color: #F5F0E4;
 $bg-color2: #C4B3A1;
 $bg-color3: #A58C73;
 $gray: #6D6A66;
-$orage: #CE4E21;
+$orange: #CE4E21;
 $purple: #251428;
+
+.diamond {
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-bottom-color: $orange;
+	position: relative;
+	top: -30px;
+	left: -29px;
+	float: left;
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: -30px;
+		top: 30px;
+		width: 0;
+		height: 0;
+		border: 30px solid transparent;
+		border-top-color: $orange;
+	}
+}
+
