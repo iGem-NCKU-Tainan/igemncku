@@ -3,7 +3,6 @@
   
    var path = window.location.pathname.split('/')[1];
 
-
    switch(path) {
    
     case 'about':
