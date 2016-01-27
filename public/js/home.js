@@ -1,1 +1,0 @@
-!function(){$(document).ready(function(i){var d=.2*i(window).height();i("#my-slider").sliderPro({width:"100%",height:d})})}();
