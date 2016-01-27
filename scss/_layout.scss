@@ -2,5 +2,10 @@
 @import "./_nav";
 
 html, body {
+  color: #42413E;
   background: $bg-color;
+}
+
+body {
+  padding-top: 20px;
 }

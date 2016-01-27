@@ -1,0 +1,56 @@
+@import "./_color";
+
+.navbar-header {
+
+  padding-left: 30px;
+  float: initial;
+
+  .prefix-title {
+    border: 2px solid $light-gray;
+    padding: 3px 15px 3px 15px;
+    font-size: 20px;
+    color: $light-gray;
+  }
+
+  .sub-title {
+    font-size: 28px;
+    color: $orange;
+    padding: 10px;
+    vertical-align: bottom;
+  }
+}
+
+.navbar-default {
+  background-color: initial;
+  border: none;
+  margin-bottom: 30px;
+
+  .navbar-nav>li>a {
+    color: #42413E;
+    font-weight: bold;
+    padding: 0;
+    margin: 2px 17px;
+    padding-bottom: 4px;
+    
+    &:hover {
+      border-bottom: 4px solid $orange;
+    }
+
+  }
+
+  .navbar-nav li {
+    height: 24px;
+    margin-top: 10px;
+  }
+
+  .divider-vertical {
+    border-right: 2.5px solid $light-gray;
+  }
+}
+
+.nav-divider {
+  border-top: 2.5px solid #999690;
+  border-style: dotted;
+  width: 92.5%;
+}
+
