@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'NotoSansCJKtc-Regular';
-  src: url("/fonts/NotoSansCJKtc-Regular.woff") format('woff');
+  src: url("/font/NotoSansCJKtc-Regular.woff") format('woff');
 }
 
 html, body {
@@ -22,6 +22,10 @@ body {
       opacity: 0.8;
     }
   }
+}
+
+.container-fluid {
+  width: 90%;
 }
 
 #footer {

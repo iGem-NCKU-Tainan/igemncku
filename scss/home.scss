@@ -3,8 +3,7 @@
 #my-slider {
   width: 100%; 
   min-height: 70%;
-  margin-top: 40px;
-  margin-left: 5%;
+  margin-top: 0px;
   margin-bottom: 30px;
 
   .sp-slide {
@@ -22,6 +21,7 @@
 	font-size: 2em;
 	text-align: center;
 	font-weight: bold;
+	color: $purple;
 
 	.underline {
 		margin: 3px auto;
@@ -50,6 +50,11 @@
 	border-left-style: solid;
 	border-width: 2px;
 	border-color: black;
+
+	p {
+    max-width: 800px;
+    margin: auto;
+  }
 }
 
 #home_bg {
