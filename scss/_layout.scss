@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'NotoSansCJKtc-Regular';
-  src: url("fonts/NotoSansCJKtc-Regular.woff") format('woff');
+  src: url("/fonts/NotoSansCJKtc-Regular.woff") format('woff');
 }
 
 html, body {
@@ -14,4 +14,13 @@ html, body {
 
 body {
   padding-top: 20px;
+
+  a {
+    color: #CE5024;
+    &:hover {
+      color: #CE5024;
+      opacity: 0.8;
+    }
+  }
 }
+
