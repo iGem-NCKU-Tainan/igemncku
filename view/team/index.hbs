@@ -46,7 +46,15 @@ $(".img-div")
 		}
 	})
 	.on('click',function(){
-		disappear = false;
+		if(disappear){
+			disappear = false;
+		} else {
+			$("#intro").remove();
+			$("#line").remove();
+			getInfo($(this));
+			$("#intro").slideDown();
+			$("#line").slideDown();
+		}
 });
 
 function leave(){
