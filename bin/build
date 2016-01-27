@@ -36,7 +36,7 @@ function build(load, w) {
       output: json_root,
       minify: minify,
       reloader: function() {
-        return posts;
+        return pages;
       }
     });
   }
