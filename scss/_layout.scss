@@ -20,8 +20,8 @@ body {
     &:hover {
       color: #CE5024;
       opacity: 0.8;
-    }
   }
+}
 }
 
 .container-fluid {
@@ -29,26 +29,26 @@ body {
 }
 
 #footer {
-	width: 100%;
-	height: 250px;
-	text-align: center;
-	margin-right: 210px;
-	background-image: url("../images/footer.png");
-	background-size: auto 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  text-align: center;
 
-	>a { 
-		float: right; 
-		height: 100%; 
-	}
-	>a:hover { background-color: $purple; }
-	
-	.icon{
-		top: 150px;
-		position: relative;
-		height: 100px;
-		margin: 0 5px;
-		border: 10px solid $purple;
-	}
+  >a { 
+    float: right; 
+  }
+
+  .footer-img {
+    margin: auto;
+  }
+}
+
+.logos {
+  width: 90%;
+  margin: auto;
+}
+.copyright {
+  background: $purple;
+  margin-top: 20px;
+  padding: 30px;
+  color: #fff;
 }
