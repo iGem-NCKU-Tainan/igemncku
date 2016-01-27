@@ -62,11 +62,11 @@ gulp.task('scss', function() {
 gulp.task('watch', function () {
   gulp.watch(['./js/**/*.js'], ['scripts']);
   gulp.watch('./scss/**/*.scss', ['scss']);
-  gulp.watch(['./images/**/*.jpg', './images/**/*.png'], ['image'])
+  gulp.watch(['./images/**/*.jpg', './images/**/*.png', './images/**/*.gif'], ['image'])
 });
 
 gulp.task('image', function () {
-  return gulp.src(['./images/**/*.jpg', './images/**/*.png'])
+  return gulp.src(['./images/**/*.jpg', './images/**/*.png', './images/**/*.gif'])
   .pipe(gulp.dest('./public/images/'));
 });
 

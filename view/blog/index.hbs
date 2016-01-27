@@ -1,13 +1,22 @@
 <html>
   <head>
     {{> head}}
-    <script async src="https://static.medium.com/embed.js"></script>
     <link rel="stylesheet" href="/css/blog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      function frameload(){
+       $('#loader').hide();
+       $('#medium').show();
+      }
+    </script>
   </head>
   <body>
     {{> header }}
     <div class="container">
-      <a class="m-profile" data-width="100%" href="https://medium.com/@igem_ncku">igem.ncku.tainan</a>
+      <div class="title" id="loader">
+        <img src="/images/loader.gif">
+      </div>
+      <iframe id="medium" onload="frameload()" style="display: none;" src="https://api.medium.com/embed?type=profile&amp;path=%2F%40igem_ncku&amp;id=0&amp;collapsed=null" allowtransparency="true" frameborder="0" title="Embedded profile" width="100%" height="606" style="display: block;max-width: 100%;min-width: 220px;padding: 0;position: static;visibility: visible;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-color: #eee #ddd #bbb;border-width: 1px;border-style: solid;box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px;"></iframe>
     </div>
     {{> footer }}
    </body>
