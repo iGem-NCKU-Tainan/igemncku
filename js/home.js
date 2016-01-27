@@ -2,7 +2,7 @@
 
 
   $(document).ready(function($) {
-    var height = $(window).height() * 0.24;
+    var height = $(window).height() * 0.2;
 
     $( '#my-slider' ).sliderPro({
       width: '90%',
