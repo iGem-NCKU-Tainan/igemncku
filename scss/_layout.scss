@@ -8,6 +8,7 @@
 
 html, body {
   color: #42413E;
+  -webkit-font-smoothing: antialiased;
   background: $bg-color;
   font-family: 'NotoSansCJKtc-Regular', 'Noto Sans', "微軟雅黑","Microsoft YaHei", Helvetica, 'sans-serif';
 }
@@ -41,6 +42,7 @@ body {
     margin: auto;
   }
 }
+
 
 .logos {
   width: 90%;

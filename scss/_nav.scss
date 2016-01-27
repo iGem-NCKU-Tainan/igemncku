@@ -36,6 +36,9 @@
     }
 
   }
+  .active {
+   border-bottom: 4px solid $orange;
+  }
 
   #navbar {
     padding-left: 0px; 
