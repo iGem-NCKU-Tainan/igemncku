@@ -30,6 +30,15 @@ route = [
     "filename": "./public/team/index.html"
   },
   {
+    "title": "iGem NCKU BLOG",
+    "url": "",
+    "img": "",
+    "description": "",
+    "partials": './partials.js',
+    "layout":  "./view/blog/index.hbs",
+    "filename": "./public/blog/index.html"
+  },
+  {
     "title": "iGem NCKU 聯絡我們",
     "url": "",
     "img": "",
