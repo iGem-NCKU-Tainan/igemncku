@@ -1,14 +1,1 @@
-(function() {
-
-
-  $(document).ready(function($) {
-    var height = $(window).height() * 0.2;
-
-    $( '#my-slider' ).sliderPro({
-      width: '100%',
-      height: height
-    });
-  });
-
-
-})();
+!function(){$(document).ready(function(i){var d=.2*i(window).height();i("#my-slider").sliderPro({width:"100%",height:d})})}();
