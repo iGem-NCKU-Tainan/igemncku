@@ -30,27 +30,47 @@
     </div>
     {{> footer }}
 	<script>
-	$(".img-div")
-		.on('mouseenter',function(){
-			var posH = $(this).offset().top + 180;
-			var posL = $(this).offset().left + 90;
-			var name = "<div class='area'><div class='title-2'>Name</div>侯智勳</div>";
-			var dept = "<div class='area'><div class='title-2'>Department</div>化工三</div>";
-			var prof = "<div class='area'><div class='title-2'>Profession</div>CEO</div>";
-			var exp  = "<div class='area'><div class='title-2'>Experience</div>台南城市浪人 發起人<br/>台美學生會議 行銷長<br/>台美學生會議 行銷長<br/>微樂生活協會 (Start-up) 南區總監</div>";
-			var about= "<div class='area'><div class='title-2'>About</div><div style='text-align:justify'>多向潛能分化者。擁有演講與簡報、提案企劃、行銷策略規劃與執行皆有相關經歷，雖為工學院背景，認為跨領域是這時代的必備能力。</div></div>";
-			var div1 = "<div class='col-md-2'>"+name+dept+prof+"</div>";
-			var div2 = "<div class='col-md-5'>"+exp+"</div>";
-			var div3 = "<div class='col-md-5'>"+about+"</div>";
-			$(this).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div id="intro"><div id="inner" class="row"></div></div>');
-			$("#inner").html(div1+div2+div3);
+var disappear = true;
+$(".img-div")
+	.on('mouseenter',function(){
+		if(disappear){
+			getInfo($(this));
 			$("#intro").slideDown();
 			$("#line").slideDown();
-		})
-		.on('mouseleave',function(){
+		}
+	})
+	.on('mouseleave',function(){
+		if(disappear){
 			$("#intro").remove();
 			$("#line").remove();
-	});
+		}
+	})
+	.on('click',function(){
+		disappear = false;
+});
+
+function leave(){
+	disappear = true;
+	$("#intro").remove();
+	$("#line").remove();
+}
+
+function getInfo(obj){
+		var posH = $(obj).offset().top + 180;
+		var posL = $(obj).offset().left + 90;
+		var name = "<div class='area'><div class='title-2'>Name</div>侯智勳</div>";
+		var dept = "<div class='area'><div class='title-2'>Department</div>化工三</div>";
+		var prof = "<div class='area'><div class='title-2'>Profession</div>CEO</div>";
+		var exp  = "<div class='area'><div class='title-2'>Experience</div>台南城市浪人 發起人<br/>台美學生會議 行銷長<br/>台美學生會議 行銷長<br/>微樂生活協會 (Start-up) 南區總監</div>";
+		var about= "<div class='area'><div class='title-2'>About</div><div style='text-align:justify'>多向潛能分化者。擁有演講與簡報、提案企劃、行銷策略規劃與執行皆有相關經歷，雖為工學院背景，認為跨領域是這時代的必備能力。</div></div>";
+		var div1 = "<div class='col-md-2'>"+name+dept+prof+"</div>";
+		var div2 = "<div class='col-md-5'>"+exp+"</div>";
+		var div3 = "<div class='col-md-5'>"+about+"</div>";
+		var exit = "<i class='glyphicon glyphicon-remove' onClick='leave();'></i>";
+		$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div id="intro"><div id="inner" class="row"></div></div>');
+		$("#inner").html(div1+div2+div3+exit);
+}
+
 	</script>
    </body>
 </html>
