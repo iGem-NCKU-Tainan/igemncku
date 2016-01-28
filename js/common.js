@@ -13,12 +13,16 @@
      $('.navbar-nav li:nth-child(3) a').addClass('active');
      break;
 
-    case 'blog':
+    case 'report':
      $('.navbar-nav li:nth-child(4) a').addClass('active');
      break;
 
-    case 'contact':
+    case 'blog':
      $('.navbar-nav li:nth-child(5) a').addClass('active');
+     break;
+
+    case 'contact':
+     $('.navbar-nav li:nth-child(6) a').addClass('active');
      break;
 
     default:
