@@ -25,6 +25,14 @@
 
 }
 
+.ack {
+	display: inline-block;
+	height: 130px;
+	margin: 10px 30px;
+	
+	img { height: 100%; }
+}
+
 #line {
 	position: absolute;
 	height: 50px;
