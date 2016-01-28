@@ -1,17 +1,12 @@
 @import "./_layout";
 
-.cover {
-	text-align: center;
-	margin: 0 auto 80px;
-	img { width: 65%; }
-}
-
 .wrapper { 
-	margin: 0 auto;
+	margin: 10px auto 50px;
 	width: 787px; 
 	.sb-slider {
 		width: 787px; 
 		height: 590px;
+		li { width: 100%; height: 100%; }
 	}
 }
 
