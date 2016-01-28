@@ -2,7 +2,7 @@ var pl = JSON.parse(member);
 var disappear = true;
 	$.each(pl, function(key,value){
 		$("#member").append('<div class="img-div" id="'+key+'"></div>');
-		$("#"+key).append("<img src='https://avatars0.githubusercontent.com/u/14795468?v=3&s=460'/>");
+		$("#"+key).append("<img src='/images/members/iGEMSquareProfile"+(key+1)+".png' />");
 	});
 $(".img-div")
 	.on('mouseenter',function(){
@@ -45,7 +45,9 @@ function getInfo(obj){
 		var dept = "<div class='area'><div class='title-2'>Department</div>"+person['Department']+"</div>";
 		var prof = "<div class='area'><div class='title-2'>Profession</div>"+person['Profession']+"</div>";
 		var experience = "";
-		$.each(person['Experience'],function(key,value){ experience+=value+'<br/>'; });
+		$.each(person['Experience'],function(key,value){ 
+			experience += value + '<br/>'; 
+		});
 		var exp  = "<div class='area'><div class='title-2'>Experience</div>"+experience+"</div>";
 		var about= "<div class='area'><div class='title-2'>About</div><div style='text-align:justify'>"+person['About']+"</div></div>";
 		var div1 = "<div class='col-md-2'>"+name+dept+prof+"</div>";
