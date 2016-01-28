@@ -21,10 +21,6 @@
      $('.navbar-nav li:nth-child(5) a').addClass('active');
      break;
 
-    case 'contact':
-     $('.navbar-nav li:nth-child(6) a').addClass('active');
-     break;
-
     default:
      $('.navbar-nav li:nth-child(1) a').addClass('active');
      break;
