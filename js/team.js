@@ -4,7 +4,7 @@ var disappear = true;
 
 $.each(ins, function(key,value){
 	$("#instructor").append('<div class="img-div instructor" id="ins'+key+'"></div>');
-	$("#ins"+key).append("<img src='/images/instructors/instructor"+(key+1)+".jpg' alt='"+value['Name']+"' />");
+	$("#ins"+key).append("<img src='/images/instructors/instructor"+(key+1)+".png' alt='"+value['Name']+"' />");
 });
 
 $.each(pl, function(key,value){
