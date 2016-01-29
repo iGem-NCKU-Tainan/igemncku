@@ -36,8 +36,9 @@
 #line {
 	position: absolute;
 	height: 50px;
-	border-width: 2px;
-	border-style: dashed;
+	border-width: 3px;
+	border-left-style: dashed;
+	border-color: $purple;
 	display: none;
 }
 
