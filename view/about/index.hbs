@@ -2,14 +2,6 @@
   <head>
     {{> head}}
     <link rel="stylesheet" href="../css/about.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript">
-      function frameload()
-      {
-          $('#loader').hide();
-          $('iframe').show();
-      } 
-    </script>
   </head>
   <body>
     {{> header }}
@@ -23,5 +15,7 @@
       </div>
     	<iframe onload="frameload()" src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1UDSFY7T8Tbg4Jzrb5rt0wfdQoxoXlU3vr5z3aU8Aq1Q&font=Default&lang=en&hash_bookmark=true&initial_zoom=2&height=650' width='100%' height='650' frameborder='0' style="margin-top:30px; display: none;"></iframe>
     {{> footer }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/about.js"></script>
    </body>
 </html>
