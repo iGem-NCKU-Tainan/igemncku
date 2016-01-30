@@ -1,4 +1,34 @@
 @import "./_layout";
 
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+.grid {
+  background: #f5f0e4;
+  &:after {
+    /* clear fix */
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer {
+  width: 33.333%;
+}
+
+.grid-item {
+    float: left;
+    width: 33.333%;
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+
 
  
