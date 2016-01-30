@@ -4,18 +4,51 @@
     <link rel="stylesheet" href="/css/report.css">
 		<link rel="stylesheet" type="text/css" href="/css/slicebox/slicebox.css" />
 		<link rel="stylesheet" type="text/css" href="/css/slicebox/custom.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      function checkIsLoaded()
+      {
+        if($('.wrapper'))
+        {
+          flag = true; 
+          for(i = 0; i < $('.wrapper').size(); i++)
+          {
+          	if($($('.sb-current')[i]).css('display') === undefined)
+          	{
+          		flag = false;
+          	}
+          	else if($($('.wrapper')[i]).css('display') == 'none')
+          	{
+          		$($('.loader')[i]).hide();
+          		$($('.wrapper')[i]).show();
+          	}
+          }
+          if(!flag)
+          	setTimeout(checkIsLoaded, 50);
+        }
+        else
+        {
+          setTimeout(checkIsLoaded, 50);
+        }
+      } 
+      setTimeout(checkIsLoaded, 50);
+    </script>
   </head>
+
   <body>
     {{> header }}
     <div class="container-fluid">
 	    <div class="title">
 			2015.12
 			<div class="underline"></div>
+			<div class="loader">
+				<img src="/images/loader.gif">
+			</div>
 		</div>
-		<div class="wrapper">
+		<div class="wrapper" style="display: none;">
 				<ul class="sb-slider">
 					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank"><img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10273906_959885297437096_6053731499884782397_n.jpg?oh=11b0f1828cb8c29f334427554da39079&oe=574401C2" /></a>
+						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank"><img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10273906_959885297437096_6053731499884782397_n.jpg?oh=11b0f1828cb8c29f334427554da39079&oe=574401C2" /><img src="/images/loader.gif"></a>
 						<div class="sb-description">
 							<h3>Team Report (Dec.)</h3>
 						</div>
@@ -89,8 +122,11 @@
 	    <div class="title">
 			2015.09 ~ 2015.11
 			<div class="underline"></div>
+			<div class="loader">
+				<img src="/images/loader.gif">
+			</div>
 		</div>
-		<div class="wrapper">
+		<div class="wrapper" style="display: none;">
 				<ul class="sb-slider">
 					<li>
 						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
