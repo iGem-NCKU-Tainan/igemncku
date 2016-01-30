@@ -2,234 +2,205 @@
   <head>
     {{> head}}
     <link rel="stylesheet" href="/css/report.css">
-		<link rel="stylesheet" type="text/css" href="/css/slicebox/slicebox.css" />
-		<link rel="stylesheet" type="text/css" href="/css/slicebox/custom.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript">
-      function checkIsLoaded()
-      {
-        if($('.wrapper'))
-        {
-          flag = true; 
-          for(i = 0; i < $('.wrapper').size(); i++)
-          {
-          	if($($('.sb-current')[i]).css('display') === undefined)
-          	{
-          		flag = false;
-          	}
-          	else if($($('.wrapper')[i]).css('display') == 'none')
-          	{
-          		$($('.loader')[i]).hide();
-          		$($('.wrapper')[i]).show();
-          	}
-          }
-          if(!flag)
-          	setTimeout(checkIsLoaded, 50);
-        }
-        else
-        {
-          setTimeout(checkIsLoaded, 50);
-        }
-      } 
-      setTimeout(checkIsLoaded, 50);
-    </script>
+        <link rel="stylesheet" type="text/css" href="/css/slicebox/slicebox.css" />
+        <link rel="stylesheet" type="text/css" href="/css/slicebox/custom.css" />
   </head>
 
   <body>
     {{> header }}
     <div class="container-fluid">
-	    <div class="title">
-			2015.12
-			<div class="underline"></div>
-			<div class="loader">
-				<img src="/images/loader.gif">
-			</div>
-		</div>
-		<div class="wrapper" style="display: none;">
-				<ul class="sb-slider">
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank"><img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10273906_959885297437096_6053731499884782397_n.jpg?oh=11b0f1828cb8c29f334427554da39079&oe=574401C2" /><img src="/images/loader.gif"></a>
-						<div class="sb-description">
-							<h3>Team Report (Dec.)</h3>
-						</div>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1931401_959885017437124_236306740137593652_n.jpg?oh=e7325fbae88e440eca529bb13ff50eb4&oe=57478AB2" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1934756_959885030770456_2691238132302537250_n.jpg?oh=c1e9decdc10ac5c6092f206c099621d2&oe=573BD4A9"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1923910_959885060770453_4774537692200021284_n.jpg?oh=25a061622a3690d64e73f4367a122dac&oe=572FDD80"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10277001_959885110770448_1899185243021431928_n.jpg?oh=fbedb8b0e5d30719e71fd30030e3e413&oe=57328536"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1934496_959885114103781_6261407513027690856_n.jpg?oh=58077aa8e92a24c794d3f6ecf2d240e1&oe=5741EB26"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/246699_959885124103780_5675481189466840683_n.jpg?oh=1b69a72eb42ef3c3c7ab4e365486b882&oe=574333E1"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/10574339_959885174103775_8896289899687864188_n.jpg?oh=4e86ccf0f4f075cf1162fe73bef3d2f1&oe=572A0B3D"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10314593_959885180770441_6940988279467312966_n.jpg?oh=177a2f385d7bfa7e2c084f45d4658e5a&oe=57464CB6"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10177954_959885187437107_8184778406495334828_n.jpg?oh=46de8beb2ddeec0c791ff9dfd9f778ce&oe=5737DD75"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/1914992_959885207437105_8934009981757917931_n.jpg?oh=2827213cd46cdb29f25a69b168854322&oe=572B73C0"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10399785_959885247437101_2918588671561387156_n.jpg?oh=cfd29b4695b8b76d669435df0b35d526&oe=572BFDE4"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1173810_959885270770432_6680920397752906116_n.jpg?oh=e89450dc4214428fa602f8aebe399a62&oe=57289DB5"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10561572_959885294103763_3193197158330627310_n.jpg?oh=e449c991b76ddf87dab3f9265cd54605&oe=5732163C"></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10449937_959885037437122_7012053721290078533_n.jpg?oh=743706f9748f828058549c16d43813c1&oe=57296117"></a>
-					</li>
-				</ul>
+        <div class="title">
+            2015.12
+            <div class="underline"></div>
+            <div class="loader" style="position:absolute;left:0; right:0; margin-left:auto; margin-right:auto;">
+                <img src="/images/loader.gif">
+            </div>
+        </div>
+        <div class="wrapper" style="visibility: hidden;">
+                <ul class="sb-slider">
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank"><img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10273906_959885297437096_6053731499884782397_n.jpg?oh=11b0f1828cb8c29f334427554da39079&oe=574401C2" /><img src="/images/loader.gif"></a>
+                        <div class="sb-description">
+                            <h3>Team Report (Dec.)</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1931401_959885017437124_236306740137593652_n.jpg?oh=e7325fbae88e440eca529bb13ff50eb4&oe=57478AB2" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1934756_959885030770456_2691238132302537250_n.jpg?oh=c1e9decdc10ac5c6092f206c099621d2&oe=573BD4A9"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1923910_959885060770453_4774537692200021284_n.jpg?oh=25a061622a3690d64e73f4367a122dac&oe=572FDD80"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10277001_959885110770448_1899185243021431928_n.jpg?oh=fbedb8b0e5d30719e71fd30030e3e413&oe=57328536"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1934496_959885114103781_6261407513027690856_n.jpg?oh=58077aa8e92a24c794d3f6ecf2d240e1&oe=5741EB26"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/246699_959885124103780_5675481189466840683_n.jpg?oh=1b69a72eb42ef3c3c7ab4e365486b882&oe=574333E1"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/10574339_959885174103775_8896289899687864188_n.jpg?oh=4e86ccf0f4f075cf1162fe73bef3d2f1&oe=572A0B3D"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/10314593_959885180770441_6940988279467312966_n.jpg?oh=177a2f385d7bfa7e2c084f45d4658e5a&oe=57464CB6"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10177954_959885187437107_8184778406495334828_n.jpg?oh=46de8beb2ddeec0c791ff9dfd9f778ce&oe=5737DD75"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/1914992_959885207437105_8934009981757917931_n.jpg?oh=2827213cd46cdb29f25a69b168854322&oe=572B73C0"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10399785_959885247437101_2918588671561387156_n.jpg?oh=cfd29b4695b8b76d669435df0b35d526&oe=572BFDE4"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1173810_959885270770432_6680920397752906116_n.jpg?oh=e89450dc4214428fa602f8aebe399a62&oe=57289DB5"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10561572_959885294103763_3193197158330627310_n.jpg?oh=e449c991b76ddf87dab3f9265cd54605&oe=5732163C"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.959884997437126.1073741834.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10449937_959885037437122_7012053721290078533_n.jpg?oh=743706f9748f828058549c16d43813c1&oe=57296117"></a>
+                    </li>
+                </ul>
 
-				<div class="shadow"></div>
+                <div class="shadow"></div>
 
-				<div class="nav-arrows">
-					<a href="#">Next</a>
-					<a href="#">Previous</a>
-				</div>
+                <div class="nav-arrows">
+                    <a href="#">Next</a>
+                    <a href="#">Previous</a>
+                </div>
 
-			</div><!-- /wrapper -->
-	    <div class="title">
-			2015.09 ~ 2015.11
-			<div class="underline"></div>
-			<div class="loader">
-				<img src="/images/loader.gif">
-			</div>
-		</div>
-		<div class="wrapper" style="display: none;">
-				<ul class="sb-slider">
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/12316192_952428118182814_7099386178535316984_n.png?oh=98a12c661a6da2da6bd40d917c100537&oe=572C4761" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12316262_952428108182815_9147201963642844240_n.png?oh=bf95d61bae1ffa4be96cc9c2a89f8116&oe=572761AF" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/12348117_952428124849480_8075016932432716886_n.png?oh=51e7e6a504eaa0fdd15f61f85b7424ce&oe=5748CD5E" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12375963_952428151516144_7282152733069783609_n.png?oh=158b82a62cf76dd825575432bbd12fda&oe=572516FF" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12345607_952428131516146_1439437775925139128_n.png?oh=81e9b00e8aa35ed5a291e1a5ef35f471&oe=572A0268" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/12347669_952428138182812_4455477578214356190_n.png?oh=ea9c379c465455bf9bea1f1273710b70&oe=573FCD5D" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/11219051_952428148182811_253974030451693980_n.png?oh=07e04e367b54082b8c36e7cd104c93ae&oe=573F9F29" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12376156_952428164849476_8937604134166617017_n.png?oh=11c4a56e28a805322ec7bfa17ad0bf50&oe=573CAFA2" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/11139409_952428198182806_6028911182362155410_n.png?oh=8e950ce2e4a603dc946e27b53eaeaf0d&oe=57281C1F" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/12316178_952428204849472_5887792834897738181_n.png?oh=5b6911fc59139ec42e4485d773cacec2&oe=5747FA56" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12366405_952428214849471_8971379259592396376_n.png?oh=e37edcb2e60a04d2f7ff2e9f237b9890&oe=57330BB5" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/11140030_952428221516137_6466713365101024229_n.png?oh=32b92e7a662b1bd307c1e096f4f0e899&oe=5725F69E" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12321103_952428228182803_6866297822173239104_n.png?oh=adaf8eb600b61e3c32c15ec8df676a16&oe=573F63F8" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12359915_952428238182802_2159100096017404332_n.png?oh=13b1d332319a3cd1d8865ebca82b7c00&oe=572A3D65" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12346377_952428244849468_4566221464139439118_n.png?oh=79fbc3dc0728910eaedf3271555d6a9e&oe=5735D41D" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12310500_952428254849467_9057883630500453869_n.png?oh=3c5483ebf1431bf7f7fdbbee778badaa&oe=573EF2BF" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11141170_952428264849466_7775547643429278853_n.png?oh=aab734c7caeacf7880369e08815034bf&oe=5743A2AC" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/12321117_952428274849465_1667970213558301510_n.png?oh=c15cde9c3a78db53095270ec7436b148&oe=574700CE" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/12376532_952428291516130_901447952672731531_n.png?oh=ac0f228a36fb313a391f402dfdcd7479&oe=572BB60B" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/12341166_952428314849461_2005046395622406696_n.png?oh=6db298c6f47f65d44df2d04f692b9d80&oe=5748884D" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12346337_952428321516127_3084043152933836109_n.png?oh=e64b8f903f1c480f26379b5a6f759e66&oe=57340B76" /></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
-							<img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12342807_952428334849459_6142105578962830424_n.png?oh=92dd620960d2b79cff392624a333af1e&oe=573497F6" /></a>
-					</li>
-				</ul>
+            </div><!-- /wrapper -->
+        <div class="title">
+            2015.09 ~ 2015.11
+            <div class="underline"></div>
+            <div class="loader title" style="position:absolute;left:0; right:0; margin-left:auto; margin-right:auto;">
+                <img src="/images/loader.gif">
+            </div>
+        </div>
+        <div class="wrapper" style="visibility: hidden;">
+                <ul class="sb-slider">
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/12316192_952428118182814_7099386178535316984_n.png?oh=98a12c661a6da2da6bd40d917c100537&oe=572C4761" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12316262_952428108182815_9147201963642844240_n.png?oh=bf95d61bae1ffa4be96cc9c2a89f8116&oe=572761AF" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/12348117_952428124849480_8075016932432716886_n.png?oh=51e7e6a504eaa0fdd15f61f85b7424ce&oe=5748CD5E" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12375963_952428151516144_7282152733069783609_n.png?oh=158b82a62cf76dd825575432bbd12fda&oe=572516FF" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12345607_952428131516146_1439437775925139128_n.png?oh=81e9b00e8aa35ed5a291e1a5ef35f471&oe=572A0268" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/12347669_952428138182812_4455477578214356190_n.png?oh=ea9c379c465455bf9bea1f1273710b70&oe=573FCD5D" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/11219051_952428148182811_253974030451693980_n.png?oh=07e04e367b54082b8c36e7cd104c93ae&oe=573F9F29" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12376156_952428164849476_8937604134166617017_n.png?oh=11c4a56e28a805322ec7bfa17ad0bf50&oe=573CAFA2" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/11139409_952428198182806_6028911182362155410_n.png?oh=8e950ce2e4a603dc946e27b53eaeaf0d&oe=57281C1F" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/12316178_952428204849472_5887792834897738181_n.png?oh=5b6911fc59139ec42e4485d773cacec2&oe=5747FA56" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12366405_952428214849471_8971379259592396376_n.png?oh=e37edcb2e60a04d2f7ff2e9f237b9890&oe=57330BB5" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtl1/v/t1.0-9/11140030_952428221516137_6466713365101024229_n.png?oh=32b92e7a662b1bd307c1e096f4f0e899&oe=5725F69E" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12321103_952428228182803_6866297822173239104_n.png?oh=adaf8eb600b61e3c32c15ec8df676a16&oe=573F63F8" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12359915_952428238182802_2159100096017404332_n.png?oh=13b1d332319a3cd1d8865ebca82b7c00&oe=572A3D65" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12346377_952428244849468_4566221464139439118_n.png?oh=79fbc3dc0728910eaedf3271555d6a9e&oe=5735D41D" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12310500_952428254849467_9057883630500453869_n.png?oh=3c5483ebf1431bf7f7fdbbee778badaa&oe=573EF2BF" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11141170_952428264849466_7775547643429278853_n.png?oh=aab734c7caeacf7880369e08815034bf&oe=5743A2AC" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/12321117_952428274849465_1667970213558301510_n.png?oh=c15cde9c3a78db53095270ec7436b148&oe=574700CE" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/12376532_952428291516130_901447952672731531_n.png?oh=ac0f228a36fb313a391f402dfdcd7479&oe=572BB60B" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/12341166_952428314849461_2005046395622406696_n.png?oh=6db298c6f47f65d44df2d04f692b9d80&oe=5748884D" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12346337_952428321516127_3084043152933836109_n.png?oh=e64b8f903f1c480f26379b5a6f759e66&oe=57340B76" /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/media/set/?set=a.952428104849482.1073741833.867827879976172&type=3" target="_blank">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12342807_952428334849459_6142105578962830424_n.png?oh=92dd620960d2b79cff392624a333af1e&oe=573497F6" /></a>
+                    </li>
+                </ul>
 
-				<div class="shadow"></div>
+                <div class="shadow"></div>
 
-				<div class="nav-arrows">
-					<a href="#">Next</a>
-					<a href="#">Previous</a>
-				</div>
+                <div class="nav-arrows">
+                    <a href="#">Next</a>
+                    <a href="#">Previous</a>
+                </div>
 
-			</div><!-- /wrapper -->
-	</div>
+            </div><!-- /wrapper -->
+    </div>
     {{> footer }}
-		<script type="text/javascript" src="/js/slicebox/modernizr.custom.46884.js"></script>
-		<script type="text/javascript" src="/js/slicebox/jquery.slicebox.min.js"></script>
-		<script type="text/javascript" src="/js/report.js"></script>
+        <script type="text/javascript" src="/js/slicebox/modernizr.custom.46884.js"></script>
+        <script type="text/javascript" src="/js/slicebox/jquery.slicebox.min.js"></script>
+        <script type="text/javascript" src="/js/report.js"></script>
    </body>
 </html>
