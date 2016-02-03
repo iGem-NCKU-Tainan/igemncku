@@ -70,9 +70,9 @@ function getInfo(obj){
 		} else {
 			var person = ins[num];
 			var name = "<div class='area'><div class='title-2'>Name</div>"+person['Name']+"</div>";
-			var title = "<div class='area'><div class='title-2'>Title</div>"+person['Title']+"</div>";
-			var exp = "<div class='area'><div class='title-2'>Experience</div>"+person['Experience']+"</div>";
-			var div = "<div class='col-md-8'>"+name+title+exp+"</div>";
+			var title = "<div class='area'><div class='title-2'>現職</div>"+person['現職']+"</div>";
+			var exp = "<div class='area'><div class='title-2'>學歷</div>"+person['學歷']+"</div>";
+			var div = "<div class='col-md-10'>"+name+title+exp+"</div>";
 			var exit = "<i class='glyphicon glyphicon-remove' onClick='leave();'></i>";
 			$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div id="intro"><div id="inner" class="row"></div></div>');
 			$("#inner").html(exit+div);
