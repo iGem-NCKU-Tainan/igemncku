@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var jsonTransform = require('gulp-json-transform');
 
 var minifyHTML = require('gulp-minify-html');
 
@@ -46,6 +47,14 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest('./public/js/'));
 });
 
+gulp.task('json', function() {
+	gulp.src(['./js/**/*.json'])
+	.pipe(jsonTransform(function(data) {
+		return data;
+	}))
+	.pipe(gulp.dest('./public/js/'));
+});
+
 gulp.task('scss', function() {
   return gulp.src(['./scss/**/*.scss', './scss/**/*.css'])
   .pipe(sourcemaps.init())
@@ -61,6 +70,7 @@ gulp.task('scss', function() {
 
 gulp.task('watch', function () {
   gulp.watch(['./js/**/*.js'], ['scripts']);
+  gulp.watch(['./js/**/*.json'], ['json']);
   gulp.watch('./scss/**/*.scss', ['scss']);
   gulp.watch(['./images/**/*.jpg', './images/**/*.png', './images/**/*.gif'], ['image'])
 });
@@ -76,4 +86,4 @@ gulp.task('font', function () {
 })
 
 
-gulp.task('default', ['scripts',  'scss', 'image', 'font', 'watch']);
+gulp.task('default', ['scripts', 'json', 'scss', 'image', 'font', 'watch']);
