@@ -1,5 +1,6 @@
 var ins = JSON.parse(instructor);
 var pl = JSON.parse(member);
+var spe = JSON.parse(specialThanks);
 var disappear = true;
 
 $.each(ins, function(key,value){
@@ -10,6 +11,11 @@ $.each(ins, function(key,value){
 $.each(pl, function(key,value){
 	$("#member").append('<div class="img-div member" id="mem'+key+'"></div>');
 	$("#mem"+key).append("<img src='/images/members/iGEMSquareProfile"+(key+1)+".png' alt='"+value['Name']+"' />");
+});
+
+$.each(spe, function(key,value){
+	$("#special").append('<div class="special" id="spe'+key+'"></div>');
+	getInfo($("#spe"+key+""));
 });
 
 $(".img-div")
@@ -65,19 +71,24 @@ function getInfo(obj){
 			var div2 = "<div class='col-md-5'>"+exp+"</div>";
 			var div3 = "<div class='col-md-5'>"+about+"</div>";
 			var exit = "<i class='glyphicon glyphicon-remove' onClick='leave();'></i>";
-			$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div id="intro"><div id="inner" class="row"></div></div>');
+			$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div class="intro" id="intro"><div id="inner" class="inner row"></div></div>');
 			$("#inner").html(exit+div1+div2+div3);
 		} else {
-			var person = ins[num];
+			var person = group == "ins" ? ins[num] : spe[num];
 			var name = "<div class='area'><div class='title-2'>Name</div>"+person['Name']+"</div>";
 			var title = "<div class='area'><div class='title-2'>現職</div>"+person['現職']+"</div>";
 			var exp = "<div class='area'><div class='title-2'>學歷</div>"+person['學歷']+"</div>";
-			var div = "<div class='col-md-10'>"+name+title+exp+"</div>";
-			var exit = "<i class='glyphicon glyphicon-remove' onClick='leave();'></i>";
-			$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div id="intro"><div id="inner" class="row"></div></div>');
-			$("#inner").html(exit+div);
+			var colmd = group == "ins" ? '10' : '12';
+			var div = "<div class='col-md-"+colmd+"'>"+name+title+exp+"</div>";
+			if ( group == "ins" ) {
+				var exit = "<i class='glyphicon glyphicon-remove' onClick='leave();'></i>";
+				$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div class="intro" id="intro"><div id="inner" class="inner row"></div></div>');
+				$("#inner").html(exit+div);
 
-			$("#intro").css({"left":"25%","width":"50%"});
+				$("#intro").css({"left":"25%","width":"50%"});
+			} else {  // special thanks
+				$(obj).append('<div class="intro"><div class="inner row">'+div+'</div></div>');
+			}
 		}
 }
 
