@@ -1,47 +1,53 @@
-var ins = JSON.parse(instructor);
-var pl = JSON.parse(member);
-var spe = JSON.parse(specialThanks);
+var ins,pl,spe;
 var disappear = true;
 
-$.each(ins, function(key,value){
-	$("#instructor").append('<div class="img-div instructor" id="ins'+key+'"></div>');
-	$("#ins"+key).append("<img src='/images/instructors/instructor"+(key+1)+".png' alt='"+value['Name']+"' />");
-});
-
-$.each(pl, function(key,value){
-	$("#member").append('<div class="img-div member" id="mem'+key+'"></div>');
-	$("#mem"+key).append("<img src='/images/members/iGEMSquareProfile"+(key+1)+".png' alt='"+value['Name']+"' />");
-});
-
-$.each(spe, function(key,value){
-	$("#special").append('<div class="special" id="spe'+key+'"></div>');
-	getInfo($("#spe"+key+""));
-});
-
-$(".img-div")
-	.on('mouseenter',function(){
-		if(disappear){
-			getInfo($(this));
-			$("#intro").slideDown();
-			$("#line").slideDown();
-		}
-	})
-	.on('mouseleave',function(){
-		if(disappear){
-			$("#intro").remove();
-			$("#line").remove();
-		}
-	})
-	.on('click',function(){
-		if(disappear){
-			disappear = false;
-		} else {
-			$("#intro").remove();
-			$("#line").remove();
-			getInfo($(this));
-			$("#intro").slideDown();
-			$("#line").slideDown();
-		}
+$(function() {
+	$.getJSON("/js/team_data.json", function(data) {
+		ins = data["instructor"];
+		pl = data["member"];
+		spe = data["specialThanks"];
+	}).done(function(){
+		$.each(ins, function(key,value){
+			$("#instructor").append('<div class="img-div instructor" id="ins'+key+'"></div>');
+			$("#ins"+key).append("<img src='/images/instructors/instructor"+(key+1)+".png' alt='"+value['Name']+"' />");
+		});
+		
+		$.each(pl, function(key,value){
+			$("#member").append('<div class="img-div member" id="mem'+key+'"></div>');
+			$("#mem"+key).append("<img src='/images/members/iGEMSquareProfile"+(key+1)+".png' alt='"+value['Name']+"' />");
+		});
+		
+		$.each(spe, function(key,value){
+			$("#special").append('<div class="special" id="spe'+key+'"></div>');
+			getInfo($("#spe"+key+""));
+		});
+		
+		$(".img-div")
+			.on('mouseenter',function(){
+				if(disappear){
+					getInfo($(this));
+					$("#intro").slideDown();
+					$("#line").slideDown();
+				}
+			})
+			.on('mouseleave',function(){
+				if(disappear){
+					$("#intro").remove();
+					$("#line").remove();
+				}
+			})
+			.on('click',function(){
+				if(disappear){
+					disappear = false;
+				} else {
+					$("#intro").remove();
+					$("#line").remove();
+					getInfo($(this));
+					$("#intro").slideDown();
+					$("#line").slideDown();
+				}
+		});
+	});
 });
 
 function leave(){
