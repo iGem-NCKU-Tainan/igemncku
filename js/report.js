@@ -6,7 +6,7 @@ $(function() {
 			var link = val["link"];
 			var wrapper = '<div class="wrapper" id="wrap'+key+'" style="visibility: hidden;">';
 			var other = '<div class="shadow"></div><div class="nav-arrows"><a href="#">Next</a><a href="#">Previous</a></div>';
-			var items = []
+			var items = [];
 			$.each(val["pages"], function(key, val){
 				var item = val["img"];
 				var subtitle = "";
@@ -72,19 +72,21 @@ function checkIsLoaded()
 {
   if($('.wrapper'))
   {
-    flag = true; 
+    
     for(i = 0; i < $('.wrapper').size(); i++)
     {
-      if($($('.sb-current')[i]).css('display') === undefined)
-      {
-          flag = false;
-      }
-      else if($($('.wrapper')[i]).css('visibility') == 'hidden')
+      if(($($('.sb-current')[i]).css('display') !== undefined) && 
+         ($($('.wrapper')[i]).css('visibility') == 'hidden'))
       {
           $($('.loader')[i]).hide();
           $($('.wrapper')[i]).css('visibility','visible');
       }
     }
+    flag = true;
+    for(i = 0; i < $('.wrapper').size(); i++)
+      if(($($('.sb-current')[i]).css('display') === undefined) ||
+         ($($('.wrapper')[i]).css('visibility') == 'hidden'))
+        flag = false;
     if(!flag)
       setTimeout(checkIsLoaded, 50);
   }
