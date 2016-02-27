@@ -4,7 +4,7 @@ var url = require('url');
 route = [
   {
     data: {
-      "title": "iGem NCKU",
+      "title": "iGEM NCKU-Tainan Official Page",
       "url": "",
       "img": "",
       "description": "",
@@ -15,7 +15,7 @@ route = [
   },
   {
     data: {
-      "title": "iGem NCKU About",
+      "title": "About - iGEM NCKU-Tainan Official Page",
       "url": "",
       "img": "",
       "description": "",
@@ -26,7 +26,7 @@ route = [
   },
   {
     data: {
-      "title": "iGem NCKU Team",
+      "title": "Team - iGEM NCKU-Tainan Official Page",
       "url": "",
       "img": "",
       "description": "",
@@ -37,7 +37,7 @@ route = [
   },
   {
     data: {
-      "title": "iGem NCKU BLOG",
+      "title": "BLOG - iGEM NCKU-Tainan Official Page",
       "url": "",
       "img": "",
       "description": ""
@@ -48,7 +48,7 @@ route = [
   },
   {
     data: {
-      "title": "iGem NCKU Report",
+      "title": "Report - iGEM NCKU-Tainan Official Page",
       "url": "",
       "img": "",
       "description": ""
