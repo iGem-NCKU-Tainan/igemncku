@@ -1,10 +1,9 @@
 $(function() {
 	$.getJSON("/js/report_data.json", function(data) {
-		var loader = '<div class="loader" style="position:absolute;left:0; right:0; margin-left:auto; margin-right:auto;"><img src="/images/loader.gif"></div>';
 		$.each(data, function(key, val){
-			var title = '<div class="title">'+val["title"]+'<div class="underline"></div>'+loader+'</div>';
+			var title = '<div class="title">'+val["title"]+'<div class="underline"></div></div>';
 			var link = val["link"];
-			var wrapper = '<div class="wrapper" id="wrap'+key+'" style="visibility: hidden;">';
+			var wrapper = '<div class="wrapper" id="wrap'+key+'" style="visibility: visible;">';
 			var other = '<div class="shadow"></div><div class="nav-arrows"><a href="#">Next</a><a href="#">Previous</a></div>';
 			var items = [];
 			$.each(val["pages"], function(key, val){
@@ -67,33 +66,3 @@ $(function() {
 		});
 	});
 });
-
-function checkIsLoaded()
-{
-  if($('.wrapper'))
-  {
-    
-    for(i = 0; i < $('.wrapper').size(); i++)
-    {
-      if(($($('.sb-current')[i]).css('display') !== undefined) && 
-         ($($('.wrapper')[i]).css('visibility') == 'hidden'))
-      {
-          $($('.loader')[i]).hide();
-          $($('.wrapper')[i]).css('visibility','visible');
-      }
-    }
-    flag = true;
-    for(i = 0; i < $('.wrapper').size(); i++)
-      if(($($('.sb-current')[i]).css('display') === undefined) ||
-         ($($('.wrapper')[i]).css('visibility') == 'hidden'))
-        flag = false;
-    if(!flag)
-      setTimeout(checkIsLoaded, 50);
-  }
-  else
-  {
-    setTimeout(checkIsLoaded, 50);
-  }
-} 
-setTimeout(checkIsLoaded, 50);
-
