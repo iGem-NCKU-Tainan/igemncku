@@ -75,3 +75,11 @@ body {
   padding: 30px;
   color: #fff;
 }
+@media all and (max-width: 767px) {
+   #footer {
+      img {
+        width: 100%;
+        min-width: 300px;
+      }
+    }
+}

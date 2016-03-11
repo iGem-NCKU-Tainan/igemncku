@@ -37,6 +37,9 @@
     }
 
   }
+  .nav-text {
+    padding-bottom: 7px;
+  }
 
   .active {
    border-bottom: 4px solid $orange;
@@ -97,4 +100,33 @@ ul.nav.navbar-nav.navbar-right {
 .icon{
   height: 30px;
   display: inline-block;
+}
+
+@media all and (max-width: 767px) {
+  li {
+    min-height: 36px;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    margin-top: 16px;
+    background: $bg-color;
+    margin-bottom: 16px;
+    > li {
+      background: $light-gray;
+    }
+    a {
+      background: $light-gray !important;
+      color: $bg-color !important;
+      &:hover {
+        color: $bg-color;
+      }
+      &:focus {
+        color: $bg-color;
+      }
+    }
+  }
+
+  ul.nav.navbar-nav.navbar-right {
+    text-align: center;
+  }
 }
