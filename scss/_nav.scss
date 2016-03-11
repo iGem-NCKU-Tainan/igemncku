@@ -108,7 +108,7 @@ ul.nav.navbar-nav.navbar-right {
   }
 
   .navbar-nav .open .dropdown-menu {
-    margin-top: 16px;
+    margin-top: 10px;
     background: $bg-color;
     margin-bottom: 16px;
     > li {
@@ -123,6 +123,14 @@ ul.nav.navbar-nav.navbar-right {
       &:focus {
         color: $bg-color;
       }
+    }
+  }
+
+  .dropdown-toggle {
+    span.nav-text {
+      margin-right: 17px;
+      display: inline-block;
+      width: 91%;
     }
   }
 
