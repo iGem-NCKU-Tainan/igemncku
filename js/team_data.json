@@ -4,17 +4,20 @@
 		{
 			"Name":"吳意珣",
 			"現職":"成功大學化工系助理教授",
-			"學歷":"國立成功大學化學工程　博士"
+			"學歷":"國立成功大學化學工程　博士",
+			"img":"/images/instructors/instructor1.png"
 		},
 		{
 			"Name":"張嘉修",
 			"現職":"成功大學化工系特聘教授",
-			"學歷":"美國加州大學Irvine分校化工暨生化　博士"
+			"學歷":"美國加州大學Irvine分校化工暨生化　博士",
+			"img":"/images/instructors/instructor2.png"
 		},
 		{
 			"Name":"蔡美玲",
 			"現職":"成大醫學院生理所副教授",
-			"學歷":"美國密西根大學毒物學　博士"
+			"學歷":"美國密西根大學毒物學　博士",
+			"img":"/images/instructors/instructor3.png"
 		}
 	],
 
@@ -51,7 +54,8 @@
 		      "台南城市浪人 發起人",
 		      "2015 GIS Taiwan English Presentation First Prize",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile1.png"
 		},
 		{ 
 		  "Name":"劉珈君",
@@ -65,7 +69,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile2.png"
 		},
 		{ 
 		  "Name":"蕭荷青",
@@ -79,7 +84,8 @@
 		      "Won in the Young Entrepreneur programme nationally sponsored by Vishay Company",
 		      "won first place in national level with my team in Choral Speaking Competition",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile3.png"
 		},
 		{ 
 		  "Name":"蔡孟軒",
@@ -93,7 +99,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile4.png"
 		},
 		{ 
 		  "Name":"王佳恩",
@@ -107,7 +114,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile5.png"
 		},
 		{ 
 		  "Name":"洪迎馨",
@@ -121,7 +129,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile6.png"
 		},
 		{ 
 		  "Name":"吳佩璇",
@@ -135,7 +144,8 @@
 		      "2014成大旗勝盃創意競賽 Super inventor system: Be the creator of inventors 入選",
 		      "2015 通過國科會計畫 To study ARNT-induced pyruvate dehydrogenase kinase-1 in EGF-enhanced HNSCC metastasis.",
 		      "黃浩仁老師實驗室專題生"
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile7.png"
 		},
 		{ 
 		  "Name":"何岳霖",
@@ -149,7 +159,8 @@
 		      "2014成大旗勝盃創意競賽 Super inventor system: Be the creator of inventors 入選",
 		      "2015國科會計畫:MOZ could regulate the expression of HR genes, such as BRCA1, BRCA2, and RAD51, thus conferring NPC cells cisplatin resistant phenotype",
 		      "成功大學生命科學系公關長"
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile8.png"
 		},
 		{ 
 		  "Name":"高紹軒",
@@ -163,7 +174,8 @@
 		      "台美學生會議 南區規劃專員",
 		      "台南城市浪人\n產品組組長",
 		      "成大電競\n總招"
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile9.png"
 		},
 		{ 
 		  "Name":"汪維萱",
@@ -177,7 +189,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile10.png"
 		},
 		{ 
 		  "Name":"賴健誠",
@@ -191,7 +204,8 @@
 		      "成大生科108級迎新宿營總召",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile11.png"
 		},
 		{ 
 		  "Name":"游方暐",
@@ -205,7 +219,8 @@
 		      "Bioleader Of Future 創始成員",
 		      "成大生命科學系學會課程組副組長",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile12.png"
 		},
 		{ 
 		  "Name":"吳博仁",
@@ -219,7 +234,8 @@
 		      "中正大學校務會議 社團代表",
 		      "第一屆中正桌球聯盟 總召集人",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile13.png"
 		},
 		{ 
 		  "Name":"顏嘉寶",
@@ -233,7 +249,8 @@
 		      "成大生科108級迎新宿營庶務長",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile14.png"
 		},
 		{ 
 		  "Name":"陳乙軒",
@@ -247,7 +264,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile15.png"
 		},
 		{ 
 		  "Name":"張宏卿",
@@ -261,7 +279,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile16.png"
 		},
 		{ 
 		  "Name":"陳書宇",
@@ -275,7 +294,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile17.png"
 		},
 		{ 
 		  "Name":"陳識宇",
@@ -289,7 +309,8 @@
 		      "高中北二區數學能力競賽佳作",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile18.png"
 		},
 		{ 
 		  "Name":"黃啟軒",
@@ -303,7 +324,8 @@
 		      "Taiwan Youth Climate Coalition Promotion team leader",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile19.png"
 		},
 		{ 
 		  "Name":"楊靜妃",
@@ -317,7 +339,8 @@
 		      "2014-2015 Microsoft Student Partners",
 		      "2012-2013 Director of Campus Computer & Network Society Club",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile20.png"
 		},
 		{ 
 		  "Name":"林協霆",
@@ -331,7 +354,8 @@
 		      "",
 		      "成杏合唱團美術",
 		      "業餘動畫師"
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile21.png"
 		},
 		{ 
 		  "Name":"鄭詠鏹",
@@ -345,7 +369,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile22.png"
 		},
 		{ 
 		  "Name":"沈祖丞",
@@ -359,7 +384,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile23.png"
 		},
 		{ 
 		  "Name":"陳亭縈",
@@ -373,7 +399,8 @@
 		      "",
 		      "",
 		      ""
-		    ]
+		    ],
+			"img":"/images/members/iGEMSquareProfile24.png"
 		},
 		{ 
 		  "Name":"鄭尹甄",

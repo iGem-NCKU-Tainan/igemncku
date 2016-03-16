@@ -8,12 +8,13 @@ $.getJSON("/js/team_data.json", function(data) {
 }).done(function(){
 	$.each(ins, function(key,value){
 		$("#instructor").append('<div class="img-div instructor" id="ins'+key+'"></div>');
-		$("#ins"+key).append("<img src='/images/instructors/instructor"+(key+1)+".png' alt='"+value['Name']+"' />");
+		$("#ins"+key).append("<img src='"+value['img']+"' alt='"+value['Name']+"' />");
 	});
 	
 	$.each(pl, function(key,value){
+		value['img'] = value['img'] ? value['img'] : "/images/unknown.png";
 		$("#member").append('<div class="img-div member" id="mem'+key+'"></div>');
-		$("#mem"+key).append("<img src='/images/members/iGEMSquareProfile"+(key+1)+".png' alt='"+value['Name']+"' />");
+		$("#mem"+key).append("<img src='"+value['img']+"' alt='"+value['Name']+"' />");
 	});
 	
 	$.each(spe, function(key,value){
