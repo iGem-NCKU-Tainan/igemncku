@@ -7,6 +7,7 @@ $.getJSON("/js/team_data.json", function(data) {
 	spe = data["specialThanks"];
 }).done(function(){
 	$.each(ins, function(key,value){
+		value['img'] = value['img'] ? value['img'] : "/images/unknown.png";
 		$("#instructor").append('<div class="img-div instructor" id="ins'+key+'"></div>');
 		$("#ins"+key).append("<img src='"+value['img']+"' alt='"+value['Name']+"' />");
 	});
@@ -18,8 +19,9 @@ $.getJSON("/js/team_data.json", function(data) {
 	});
 	
 	$.each(spe, function(key,value){
-		$("#special").append('<div class="special" id="spe'+key+'"></div>');
-		getInfo($("#spe"+key+""));
+		value['img'] = value['img'] ? value['img'] : "/images/unknown.png";
+		$("#special").append('<div class="img-div special" id="spe'+key+'"></div>');
+		$("#spe"+key).append("<img src='"+value['img']+"' alt='"+value['Name']+"' />");
 	});
 	
 	$(".img-div")
@@ -83,17 +85,13 @@ function getInfo(obj){
 			var name = "<div class='area'><div class='title-2'>Name</div>"+person['Name']+"</div>";
 			var title = "<div class='area'><div class='title-2'>現職</div>"+person['現職']+"</div>";
 			var exp = "<div class='area'><div class='title-2'>學歷</div>"+person['學歷']+"</div>";
-			var colmd = group == "ins" ? '10' : '12';
+			var colmd = '10';
 			var div = "<div class='col-md-"+colmd+"'>"+name+title+exp+"</div>";
-			if ( group == "ins" ) {
-				var exit = "<i class='glyphicon glyphicon-remove' onClick='leave();'></i>";
-				$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div class="intro" id="intro"><div id="inner" class="inner row"></div></div>');
-				$("#inner").html(exit+div);
+			var exit = "<i class='glyphicon glyphicon-remove' onClick='leave();'></i>";
+			$(obj).after('<div id="line" style="top:'+posH+'px;left:'+posL+'px;"></div><div class="intro" id="intro"><div id="inner" class="inner row"></div></div>');
+			$("#inner").html(exit+div);
 
-				$("#intro").css({"left":"25%","width":"50%"});
-			} else {  // special thanks
-				$(obj).append('<div class="intro"><div class="inner row">'+div+'</div></div>');
-			}
+			$("#intro").css({"left":"25%","width":"50%"});
 		}
 }
 
