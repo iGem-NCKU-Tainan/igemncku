@@ -71,7 +71,7 @@ gulp.task('scss', function() {
 gulp.task('watch', function () {
   gulp.watch(['./js/**/*.js'], ['scripts']);
   gulp.watch(['./js/**/*.json'], ['json']);
-  gulp.watch('./scss/**/*.scss', ['scss']);
+  gulp.watch(['./scss/**/*.scss', './scss/**/*.css'], ['scss']);
   gulp.watch(['./images/**/*.jpg', './images/**/*.png', './images/**/*.gif'], ['image'])
 });
 

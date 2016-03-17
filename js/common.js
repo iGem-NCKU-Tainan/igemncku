@@ -14,16 +14,16 @@
      $('.navbar-nav > li:nth-child(3) .nav-text').addClass('active');
      break;
 
-    case 'project':
+//    case 'project':
+//     $('.navbar-nav > li:nth-child(4) a').addClass('active');
+//     break;
+
+    case 'report':
      $('.navbar-nav > li:nth-child(4) a').addClass('active');
      break;
 
-    case 'report':
-     $('.navbar-nav > li:nth-child(5) a').addClass('active');
-     break;
-
     case 'blog':
-     $('.navbar-nav > li:nth-child(6) a').addClass('active');
+     $('.navbar-nav > li:nth-child(5) a').addClass('active');
      break;
 
     default:
