@@ -2,6 +2,7 @@
 
   
    var path = window.location.pathname.split('/')[1];
+   var isMobile = $(window).width() < 768;
 
    switch(path) {
    
@@ -30,6 +31,29 @@
      break;
    
    }
+    
+  
+  $(window).on('scroll', function (e){
+    if ($(this).scrollTop() < 30) {
+      $('#navbar').removeClass('fixed');
 
+      if (isMobile) {
+        $('.navbar-header').removeClass('navbar-fixed-top');
+      }
+    }
+    else {
+      $('#navbar').addClass('fixed');
+
+      if (isMobile) {
+        $('.navbar-header').addClass('navbar-fixed-top');
+      }
+    }
+  });
+
+  $( window ).resize(function() { 
+    isMobile = $(window).width() < 768;
+    if (!isMobile)
+      $('.navbar-header').removeClass('navbar-fixed-top');
+  });
 
 })();

@@ -1,7 +1,7 @@
 @import "./_color";
 
 .navbar-header {
-
+  background-color: $bg-color;
   float: initial;
   margin-bottom: 10px;
 
@@ -79,6 +79,9 @@
     li {
       padding-left: 0px; 
     }
+    .divider-vertical {
+      height: 24px;
+    }
   }
 
   .divider-vertical {
@@ -137,4 +140,30 @@ ul.nav.navbar-nav.navbar-right {
   ul.nav.navbar-nav.navbar-right {
     text-align: center;
   }
+
+}
+#navbar.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0px;
+  background: #F5F0E4;
+  padding: 15px 8% 10px;
+  border-bottom: 1px solid rgba(153, 150, 144, 0.29);
+  left: 0;
+}
+.navbar-fixed-top {
+  padding: 0px 15px;
+}
+@media all and (max-width: 768px) {
+  #navbar.fixed {
+    margin-top: 5px;
+    top: 45px;
+  }
+  .navbar-header {
+    .sub-title {
+      font-size: 24px;
+    }
+  }
+
 }
