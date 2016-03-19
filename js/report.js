@@ -1,4 +1,6 @@
 $(function() {
+  var boxNumber = 0; 
+
 	$.getJSON("/js/report_data.json", function(data) {
 		$.each(data, function(key, val){
 			var title = '<div class="title">'+val["title"]+'<div class="underline"></div></div>';
@@ -20,13 +22,11 @@ $(function() {
 				"class": "sb-slider",
 				html: items.join("")
 			}).appendTo(obj);
+
 			obj.append(other);
+
+
 			// add slicebox effect
-      var navTop = obj.find(".sb-slider").offset().top + 300;
-      var arrowLeft = obj.find(".sb-slider").offset().left;
-      obj.find(".nav-arrows a").css("top",navTop);
-      obj.find('.nav-arrows a:first-child').css("left",arrowLeft + 795);
-      obj.find('.nav-arrows a:nth-child(2)').css("left",arrowLeft - 50);
       var Page = (function() {
           var $navArrows = obj.find( '.nav-arrows' ).hide(),
               $shadow = obj.find( '.shadow' ).hide(),
@@ -42,7 +42,7 @@ $(function() {
               
               init = function() {
                   initEvents();
-                  
+                 
               },
               initEvents = function() {
                   // add navigation events
@@ -63,6 +63,29 @@ $(function() {
               return { init : init };
       })();
       Page.init();
+
+      setTimeout(function() {
+        setNavArrowPos();
+      }, 200);
+      boxNumber += 1;
+
 		});
 	});
+
+  $(window).resize(setNavArrowPos);
+	function setNavArrowPos() {
+    $('.wrapper').each(function() {
+      var el = $(this);
+      var a = el.find(".nav-arrows a");
+      var arrowLeft = el.offset().left;
+      var arrowRight = el.width() + arrowLeft - 30;
+      a.show();
+      a.css("top", el.offset().top + el.height()/2-50 );
+
+      el.find('.nav-arrows a:nth-child(1)').css("left",arrowRight);
+      el.find('.nav-arrows a:nth-child(2)').css("left",arrowLeft);
+       
+    });
+  }
+
 });
