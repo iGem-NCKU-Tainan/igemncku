@@ -55,21 +55,49 @@ p {
 
 
 #cover {
-	img { 
-		width: 100%; 
-		z-index: 0;
-		position: relative;
+	height: 520px;
+	background-image: url('/images/2016conf/cover.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	#cover-text { 
+		margin-left: 56%; 
+		padding: 20px;
+		position: absolute;
+		top: 160px;
+		background: rgba(0,0,0,.5);
+		line-height: 60px;
+		border-radius: 10px;
+		#title1 {
+			color: #fff;
+			font-weight: bold;
+			font-size: 40px;
+		}
+		#title2 {
+			margin-left: 30px;
+			color: $subtitle-color;
+			font-weight: bold;
+			font-size: 32px;
+		}
+		#title3 {
+			margin-left: 60px;
+			color: $bg-gray;
+			font-weight: bold;
+			font-size: 32px;
+		}
+		@media all and (max-width: 767px) {
+			margin: 0 5%;
+		}
 	}
 }
 
 #intro {
 	width: 100%;
-	margin: -50px 0 0 0;
 	padding-bottom: 50px;
 	background-color: $bg-gray;
 
 	#intro-text {
-		margin: 80px 0 50px;
+		margin: 60px 0 50px;
 		padding: 0 50px;
 		text-align: justify;
 	}
@@ -77,7 +105,7 @@ p {
 	#intro1 {
 		width: 80%;
 		float: right;
-		margin-top: -40px;
+		margin-top: -80px;
 		margin-right: 40px;
 		z-index: 10;
 		position: relative;
@@ -158,7 +186,7 @@ p {
 		p { font-size: 1.2em; }
 		&>div { 
 			background: rgba(0,0,0,.5);
-			color: white;
+			color: #fff;
 			width: 80%;
 			padding: 5px 20px;
 			margin: 180px auto;
@@ -198,7 +226,7 @@ p {
 			margin: 20px 0;
 		}
 		button>a	{
-			color: white;
+			color: #fff;
 			font-weight: bold;
 			&:hover { text-decoration: none; }
 		}
@@ -210,7 +238,7 @@ p {
 
 #footer {
 	text-align: center;
-	color: white;
+	color: #fff;
 	padding: 15px;
 	background: rgba(0,0,0,.7);
 }
