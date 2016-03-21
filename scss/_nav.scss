@@ -157,7 +157,7 @@ ul.nav.navbar-nav.navbar-right {
   width: 100%;
   z-index: 999;
   top: 0px;
-  background: #F5F0E4;
+  background: rgba(245, 240, 228, 0.8);
   padding: 15px 8% 10px;
   border-bottom: 1px solid rgba(153, 150, 144, 0.29);
   left: 0;
@@ -168,9 +168,11 @@ ul.nav.navbar-nav.navbar-right {
 @media all and (max-width: 768px) {
   #navbar.fixed {
     margin-top: 5px;
+    background: #F5F0E4;
     top: 45px;
     width: 100%;
     padding-right: 0;
+    overflow-x: hidden;
   }
   .navbar-header {
     .sub-title {
