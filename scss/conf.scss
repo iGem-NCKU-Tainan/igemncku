@@ -150,7 +150,7 @@ p {
 }
 #travel {
 	width: 80%;
-	margin: auto;
+	margin: 200px auto 0;
 	&>div {
 		margin: 50px 0;
 		padding: 0;
@@ -202,6 +202,9 @@ p {
 			font-weight: bold;
 			&:hover { text-decoration: none; }
 		}
+	}
+	@media all and (max-width: 767px) {
+		&>div { width: 90%; }
 	}
 }
 
