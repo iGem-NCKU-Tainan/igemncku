@@ -37,6 +37,17 @@ route = [
   },
   {
     data: {
+      "title": "2016 Conference - iGEM NCKU-Tainan Official Page",
+      "url": "",
+      "img": "",
+      "description": "",
+    },
+    "partials": './partials.js',
+    "layout":  "./view/conf/2016.hbs",
+    "filename": "./public/2016conf/index.html"
+  },
+  {
+    data: {
       "title": "BLOG - iGEM NCKU-Tainan Official Page",
       "url": "",
       "img": "",

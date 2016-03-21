@@ -5,6 +5,8 @@ module.exports= function (hbs) {
   hbs.registerPartial('head', getPartials('head'));
   hbs.registerPartial('header', getPartials('header'));
   hbs.registerPartial('footer', getPartials('footer'));
+  // conference layout
+  hbs.registerPartial('header-conf', getPartials('header-conf'));
 };
 
 function getPartials(filename) {
