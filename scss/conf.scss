@@ -2,7 +2,6 @@
 @import "./_nav-conf";
 
 html, body {
-	min-width: 1024px;
   color: $font-color;
   -webkit-font-smoothing: antialiased;
   background: $bg-color;
@@ -14,11 +13,44 @@ html, body {
   }
 }
 
+h1,
+h4 {
+  color: #333;
+  font-weight: 600;
+}
+
+.gray-bg {
+  background-color: #F6F4F5;
+}
+
+p {
+  padding: 10px;
+}
+
 .container-fluid {
   width: 100%;
 	margin: 0;
 	padding: 0;
 }
+
+.container {
+  padding: 50px 0;
+}
+
+.row {
+  min-height: 400px;
+  padding: 50px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
 
 #cover {
 	img { 
@@ -52,3 +84,51 @@ html, body {
 
 }
 
+.col-md-4 {
+  padding: 0;
+  box-shadow: 1px 2px 8px rgba(208, 208, 208, 0.5);
+  min-height: 300px;
+  border: 1px solid #eee;
+}
+
+.text-content {
+  padding: 30px 20px 10px;
+}
+
+.grid-img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+#wanna-go {
+  background: url('../images/backgroud.png');
+  background-repeat: no-repeat;
+  backgournd-size: cover;
+  backgournd-position: center center;
+  h1 {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  button {
+    float: right;
+    width: 90px;
+  }
+}
+
+
+@media all and (max-width: 993px) {
+
+  .col-md-4 {
+    box-shadow: none;
+    border: none;
+    width: 80%;
+    margin: auto;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+}
