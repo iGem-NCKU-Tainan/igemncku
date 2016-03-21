@@ -185,10 +185,7 @@ p {
 }
 
 #apply {
-	margin: 50px;
-  a {
-    color: #fff;
-  }
+	margin: 100px 50px;
 	&>div{
 		margin: auto;
 		width: 40%;
@@ -200,6 +197,18 @@ p {
 			font-size: 1.2em; 
 			margin: 20px 0;
 		}
+		button>a	{
+			color: white;
+			font-weight: bold;
+			&:hover { text-decoration: none; }
+		}
 	}
+}
+
+#footer {
+	text-align: center;
+	color: white;
+	padding: 15px;
+	background: rgba(0,0,0,.7);
 }
 
