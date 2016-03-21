@@ -2,6 +2,8 @@
 @import "./_nav-conf";
 
 html, body {
+  width: 100%;
+  overflow-x: hidden;
   color: $font-color;
   -webkit-font-smoothing: antialiased;
   background: $bg-color;
@@ -61,9 +63,16 @@ p {
 }
 
 #intro {
-	height: 500px;
 	width: 100%;
+	margin: 0;
+	padding-bottom: 50px;
 	background-color: $bg-gray;
+
+	#intro-text {
+		margin: 80px 0 50px;
+		padding: 0 50px;
+		text-align: justify;
+	}
 
 	#intro1 {
 		width: 80%;
@@ -80,6 +89,13 @@ p {
 		margin-right: 50%;
 		z-index: 20;
 		position: relative;
+	}
+	@media all and (max-width: 767px) {
+		#intro-img{ 
+			text-align: center;
+			#intro1 { margin: 0 auto; float: none; width: 40%; }
+			#intro2 { margin: 0 auto; float: none; width: 25%; }
+		}
 	}
 
 }
@@ -111,7 +127,7 @@ p {
     padding: 10px;
     border-radius: 3px;
   }
-  button {
+  .btn {
     float: right;
     width: 90px;
   }
@@ -132,3 +148,58 @@ p {
   }
 
 }
+#travel {
+	width: 80%;
+	margin: auto;
+	&>div {
+		margin: 50px 0;
+		padding: 0;
+		height: 550px;
+		p { font-size: 1.2em; }
+		&>div { 
+			background: rgba(0,0,0,.5);
+			color: white;
+			width: 80%;
+			padding: 5px 20px;
+			margin: 180px auto;
+			position: relative;
+			z-index: 20; 
+			text-align: justify;
+		}
+		img {
+			width: 80%;
+			height: 100%;
+			position: absolute;
+			top:0;
+			left:10%;
+			z-index: 10;
+		}
+	}
+	#travel_bg {
+		width: 150%;
+		margin-top: -40%;
+		position: relative;
+		left: -15%;
+		z-index: 0;
+	}
+}
+
+#apply {
+	margin: 50px;
+  a {
+    color: #fff;
+  }
+	&>div{
+		margin: auto;
+		width: 40%;
+		padding: 30px 40px;
+		text-align: center;
+		background: none;
+		box-shadow:0 0 15px 0 rgba(0,200,150,.5),inset 0 0 15px 0 rgba(0,200,150,.5);
+		p { 
+			font-size: 1.2em; 
+			margin: 20px 0;
+		}
+	}
+}
+
