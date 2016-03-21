@@ -7,6 +7,7 @@ module.exports= function (hbs) {
   hbs.registerPartial('footer', getPartials('footer'));
   // conference layout
   hbs.registerPartial('header-conf', getPartials('header-conf'));
+  hbs.registerPartial('header-conf-en', getPartials('header-conf-en'));
 };
 
 function getPartials(filename) {
