@@ -94,11 +94,27 @@ html, body {
 		}
 	}
 	#travel_bg {
-		width: 100%;
-		margin-top: 100px;
-		position: absolute;
-		left: 0;
+		width: 150%;
+		margin-top: -40%;
+		position: relative;
+		left: -15%;
 		z-index: 0;
+	}
+}
+
+#apply {
+	margin: 50px;
+	&>div{
+		margin: auto;
+		width: 40%;
+		padding: 30px 40px;
+		text-align: center;
+		background: none;
+		box-shadow:0 0 15px 0 rgba(0,200,150,.5),inset 0 0 15px 0 rgba(0,200,150,.5);
+		p { 
+			font-size: 1.2em; 
+			margin: 20px 0;
+		}
 	}
 }
 
