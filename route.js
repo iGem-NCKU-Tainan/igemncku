@@ -56,6 +56,17 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/report/index.hbs",
     "filename": "./public/report/index.html"
+  },
+  {
+    data: {
+      title: "iGEM NCKU-Tainan Official Page",
+      img: "",
+      url: "",
+      description: ""
+    },
+    partials: './partials.js',
+    layout: "./view/index.en.hbs",
+    filename: './public/en/index.html'
   }
 ];
 
