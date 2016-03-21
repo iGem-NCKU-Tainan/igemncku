@@ -1,0 +1,54 @@
+@import "./_color-conf";
+@import "./_nav-conf";
+
+html, body {
+	min-width: 1024px;
+  color: $font-color;
+  -webkit-font-smoothing: antialiased;
+  background: $bg-color;
+  font-family: Helvetica, "微軟雅黑","Microsoft YaHei", 'sans-serif';
+  a {
+    &:hover {
+      opacity: 0.8;
+		}
+  }
+}
+
+.container-fluid {
+  width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#cover {
+	img { 
+		width: 100%; 
+		z-index: 0;
+		position: relative;
+	}
+}
+
+#intro {
+	height: 500px;
+	width: 100%;
+	background-color: $bg-gray;
+
+	#intro1 {
+		width: 80%;
+		float: right;
+		margin-top: -40px;
+		margin-right: 40px;
+		z-index: 10;
+		position: relative;
+	}
+	#intro2 {
+		width: 50%;
+		float: right;
+		margin-top: -20%;
+		margin-right: 50%;
+		z-index: 20;
+		position: relative;
+	}
+
+}
+

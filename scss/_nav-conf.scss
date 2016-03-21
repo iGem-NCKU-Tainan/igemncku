@@ -1,0 +1,57 @@
+@import "./_color-conf";
+
+.navbar-header {
+  .prefix-title {
+    border: 2px solid $font-color;
+    padding: 3px 15px 3px 15px;
+    font-size: 15px;
+  }
+
+  .sub-title {
+    font-size: 25px;
+    color: $subtitle-color;
+    padding: 10px;
+    vertical-align: sub;
+  }
+}
+
+.navbar-default {
+	padding: 0 8%;
+	margin-bottom: 0;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+  background-color: rgba(255,255,255,.8);
+	box-shadow: 0 0 5px rgba(0,0,0,.8);
+  border: none;
+
+  .navbar-nav>li>a, .nav-text {
+    font-weight: bold;
+    padding: 0;
+    margin: 1px 17px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    
+    &:hover {
+      border-bottom: 4px solid $subtitle-color;
+    }
+
+  }
+  .nav-text {
+    padding-bottom: 7px;
+  }
+
+  .active {
+		border-bottom: 4px solid $subtitle-color;
+  }
+
+  i {
+    margin-left: 3px;
+  }
+
+  .navbar-center {
+    padding: 15px 0 10px; 
+		text-align: center;
+		margin: auto;
+  }
+}
