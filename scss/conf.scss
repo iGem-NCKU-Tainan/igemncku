@@ -29,9 +29,16 @@ html, body {
 }
 
 #intro {
-	height: 500px;
 	width: 100%;
+	margin: 0;
+	padding-bottom: 50px;
 	background-color: $bg-gray;
+
+	#intro-text {
+		margin: 80px 0 50px;
+		padding: 0 50px;
+		text-align: justify;
+	}
 
 	#intro1 {
 		width: 80%;
@@ -48,6 +55,13 @@ html, body {
 		margin-right: 50%;
 		z-index: 20;
 		position: relative;
+	}
+	@media all and (max-width: 767px) {
+		#intro-img{ 
+			text-align: center;
+			#intro1 { margin: 0 auto; float: none; width: 40%; }
+			#intro2 { margin: 0 auto; float: none; width: 25%; }
+		}
 	}
 
 }
