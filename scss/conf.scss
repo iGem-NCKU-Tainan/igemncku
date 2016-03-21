@@ -64,7 +64,7 @@ p {
 
 #intro {
 	width: 100%;
-	margin: 0;
+	margin: -50px 0 0 0;
 	padding-bottom: 50px;
 	background-color: $bg-gray;
 
@@ -177,7 +177,7 @@ p {
 	}
 	#travel_bg {
 		width: 150%;
-		margin-top: -40%;
+		margin-top: -50%;
 		position: relative;
 		left: -15%;
 		z-index: 0;

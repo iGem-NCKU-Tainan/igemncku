@@ -20,7 +20,7 @@ $(document).ready( function() {
 		e.preventDefault();
 	    $('html, body').animate({ scrollTop: $("#travel").offset().top-navH}, 1000);
 	});
-	$("#buttonApply").on('click',function(e) {
+	$("#buttonApply, #toApply").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
 	    $('html, body').animate({ scrollTop: $("#apply").offset().top-navH }, 1000);
@@ -30,7 +30,7 @@ $(document).ready( function() {
 		var INTRO=$("#intro").offset().top-navH;
 		var ACT=$("#act").offset().top-navH;
 		var TRAVEL=$("#travel").offset().top-navH;
-		var APPLY=$("#apply").offset().top-navH;
+		var APPLY=$("#apply").offset().top-navH-300;
 		if(t+1>=APPLY){
 			$("#navbar ul li a").removeClass("active");
 			$("#buttonApply").addClass("active");
