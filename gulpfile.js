@@ -28,7 +28,7 @@ var sassOptions = {
   outputStyle: 'expanded'
 };
 
- 
+
 gulp.task('minify-html', function() {
   var opts = {
     conditionals: true,
