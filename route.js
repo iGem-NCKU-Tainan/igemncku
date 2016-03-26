@@ -37,6 +37,17 @@ route = [
   },
   {
     data: {
+      "title": "Sponsor - iGEM NCKU-Tainan Official Page",
+      "url": "",
+      "img": "",
+      "description": "",
+    },
+    "partials": './partials.js',
+    "layout":  "./view/sponsor/index.hbs",
+    "filename": "./public/sponsor/index.html"
+  },
+  {
+    data: {
       "title": "2016 Conference - iGEM NCKU-Tainan Official Page",
       "url": "",
       "img": "",
