@@ -1,5 +1,5 @@
 $(function() {
-  var boxNumber = 0; 
+  var boxNumber = 0;
 
 	$.getJSON("/js/report_data.json", function(data) {
 		$.each(data, function(key, val){
@@ -34,15 +34,18 @@ $(function() {
                   onReady : function() {
                       $navArrows.show();
                       $shadow.show();
+                      setTimeout(function() {
+                        setNavArrowPos();
+                      }, 200);
                   },
                   orientation : 'r',
                   cuboidsRandom : true,
                   disperseFactor : 30
               } ),
-              
+
               init = function() {
                   initEvents();
-                 
+
               },
               initEvents = function() {
                   // add navigation events
@@ -51,7 +54,7 @@ $(function() {
                       return false;
                   } );
                   $navArrows.children( ':last' ).on( 'click', function() {
-                      
+
                       slicebox.previous();
                       return false;
                   } );
@@ -63,10 +66,6 @@ $(function() {
               return { init : init };
       })();
       Page.init();
-
-      setTimeout(function() {
-        setNavArrowPos();
-      }, 200);
       boxNumber += 1;
 
 		});
@@ -84,7 +83,7 @@ $(function() {
 
       el.find('.nav-arrows a:nth-child(1)').css("left",arrowRight);
       el.find('.nav-arrows a:nth-child(2)').css("left",arrowLeft);
-       
+
     });
   }
 
