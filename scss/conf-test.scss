@@ -126,10 +126,18 @@ li {
 	}
 	h1 { text-align: center; }
 	.big-bg {
-		background-image: url(/images/blank.jpg);
+		&#open { background-image: url('/images/2016conf/webneed-05.png'); }
+		&#closing { background-image: url('/images/2016conf/webneed-11.png'); }
 		background-position: center;
 		background-size: cover;
-		div { padding: 0 5%; }
+		blockquote {}
+		&>div>div { 
+			width: 80%;
+			margin: 0 auto;
+			padding: 10px 0;
+			border-radius: 5px;
+			background: rgba(255,255,255,.8);
+		}
 	}
 	img {
 		width: 80%;
@@ -145,6 +153,9 @@ li {
 	}
 	&>.row {
   	padding: 40px 0;
+	}
+	@media all and (max-width: 991px) {
+		.col-md-6 { padding: 0 50px; }
 	}
 }
 
@@ -205,6 +216,28 @@ li {
 	@media all and (max-width: 767px) {
 		&>div { width: 90%; }
 	}
+}
+
+@media (min-width: 992px) {
+  .row-md-height {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .col-md-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-md-top {
+    vertical-align: top;
+  }
+  .col-md-middle {
+    vertical-align: middle;
+  }
+  .col-md-bottom {
+    vertical-align: bottom;
+  }
 }
 
 #footer {
