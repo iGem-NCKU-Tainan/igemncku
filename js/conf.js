@@ -10,10 +10,10 @@ $(document).ready( function() {
 		e.preventDefault();
 	    $('html, body').animate({ scrollTop: $("#intro").offset().top-navH }, 1000);
 	});
-	$("#buttonAct").on('click',function(e) {
+	$("#buttonAgenda").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
-	    $('html, body').animate({ scrollTop: $("#act").offset().top-navH }, 1000);
+	    $('html, body').animate({ scrollTop: $("#agenda").offset().top-navH }, 1000);
 	});
 	$("#buttonTravel").on('click',function(e) {
 		e.stopPropagation();
@@ -28,7 +28,7 @@ $(document).ready( function() {
 	$(window).scroll( function(){
 		var t=document.documentElement.scrollTop || document.body.scrollTop;
 		var INTRO=$("#intro").offset().top-navH;
-		var ACT=$("#act").offset().top-navH;
+		var AGENDA=$("#agenda").offset().top-navH;
 		var TRAVEL=$("#travel").offset().top-navH;
 		var APPLY=$("#apply").offset().top-navH-300;
 		if(t+1>=APPLY){
@@ -39,9 +39,9 @@ $(document).ready( function() {
 			$("#navbar ul li a").removeClass("active");
 			$("#buttonTravel").addClass("active");
 		}
-		else if(t+1>=ACT){
+		else if(t+1>=AGENDA){
 			$("#navbar ul li a").removeClass("active");
-			$("#buttonAct").addClass("active");
+			$("#buttonAgenda").addClass("active");
 		}
 		else if(t+1>=INTRO){
 			$("#navbar ul li a").removeClass("active");
@@ -54,4 +54,7 @@ $(document).ready( function() {
 	});
 });
 
+function toEvent(section){
+	$('html, body').animate({ scrollTop: $("#"+section).offset().top-navH }, 1000);
+}
 

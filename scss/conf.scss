@@ -26,7 +26,12 @@ h4 {
 }
 
 p {
+	font-size: 18px;
   padding: 10px;
+}
+
+li {
+	font-size: 18px;
 }
 
 .container-fluid {
@@ -40,10 +45,6 @@ p {
   padding: 50px 0;
 }
 
-.row {
-  min-height: 400px;
-  padding: 50px 0;
-}
 
 .text-center {
   text-align: center;
@@ -93,119 +94,93 @@ p {
 	}
 }
 
-#intro {
-	width: 100%;
-	padding-bottom: 50px;
+#intro{
 	background-color: $bg-gray;
+	padding: 50px 10%;
 
-	#intro-text {
-		margin: 60px 0 50px;
-		padding: 0 50px;
-		text-align: justify;
+	div { 
+		padding: 20px 0;
 	}
 
-	#intro1 {
+	img {
+		margin: 0 10%;
 		width: 80%;
-		float: right;
-		margin-top: -80px;
-		margin-right: 40px;
-		z-index: 10;
-		position: relative;
 	}
-	#intro2 {
-		width: 50%;
-		float: right;
-		margin-top: -20%;
-		margin-right: 50%;
-		z-index: 20;
-		position: relative;
+	
+	.top-img>div {
+		width: 100%;
+		text-align: center;
 	}
-	@media all and (max-width: 767px) {
-		#intro-img{ 
-			text-align: center;
-			#intro1 { margin: 0 auto; float: none; width: 40%; }
-			#intro2 { margin: 0 auto; float: none; width: 25%; }
+
+	.top-text {
+		padding: 50px;
+	}
+
+	#teamnum {
+		text-align: right;
+		position: absolute;
+		top: 5%;
+		right: 10%;
+		.teamnum1 {
+			font-size: 30px;
+		}
+		.teamnum2 {
+			color: $subtitle-color;
+			font-size: 70px;
 		}
 	}
-
 }
 
-.col-md-4 {
-  padding: 0;
-  box-shadow: 1px 2px 8px rgba(208, 208, 208, 0.5);
-  min-height: 320px;
-  border: 1px solid #eee;
-}
-
-.text-content {
-  padding: 30px 20px 10px;
-}
-
-.grid-img {
-  max-width: 100%;
-  max-height: 300px;
-}
-
-#wanna-go {
-  background: url('../images/backgroud.png');
-  background-repeat: no-repeat;
-  backgournd-size: cover;
-  backgournd-position: center center;
-  h1 {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    border-radius: 3px;
-  }
-  .btn {
-    float: right;
-    width: 90px;
-  }
-}
-
-
-@media all and (max-width: 993px) {
-
-  .col-md-4 {
-    box-shadow: none;
-    border: none;
-    width: 80%;
-    margin: auto;
-  }
-
-  .text-content {
-    text-align: center;
-  }
-
-}
-#travel {
-	width: 80%;
-	margin: 200px auto 0;
-	&>div {
-		margin: 50px 0;
-		padding: 0 3%;
-		height: 550px;
-		p { font-size: 1.2em; }
-		&>div { 
-			background-size: auto 100%;
-			background-position: center;
-			height: 100%; 
-			padding:0;
-		}
+#agenda {
+	padding: 150px 0 0;
+	#calendar { 
+		padding: 50px 5% 150px; 
+		.fc-time { font-size: 12px; }
+		.fc-title { font-size: 14px; }
+	}
+	h1 { text-align: center; }
+	.big-bg {
+		&#open { background-image: url('/images/2016conf/webneed-05.png'); }
+		&#closing { background-image: url('/images/2016conf/webneed-11.png'); }
+		background-position: center;
+		background-size: cover;
+		blockquote {}
 		&>div>div { 
-			background: rgba(0,0,0,.5);
-			color: #fff;
-			width: 100%;
-			padding: 5px 20px;
-			margin: 130px auto;
-			text-align: justify;
+			width: 80%;
+			margin: 0 auto;
+			padding: 10px 0;
+			border-radius: 5px;
+			background: rgba(255,255,255,.8);
 		}
 	}
-	#nighttrip { background-image: url('/images/2016conf/nighttrip.png'); }
-	#fieldtrip { background-image: url('/images/2016conf/fieldtrip.png'); }
+	img {
+		width: 80%;
+		margin: 0 10%;;
+	}
+	.line {
+		padding: 0;
+		min-height: 200px;
+		.col-md-3 {
+			height: 200px;
+			border-right: 3px solid black;
+		}
+	}
+	&>.row {
+  	padding: 40px 0;
+	}
+	@media all and (max-width: 991px) {
+		.col-md-6 { padding: 0 50px; }
+	}
+}
+
+#travel {
+	background: $bg-gray;
+	padding: 150px 10% 0;
+	img { width: 100%; }
+	.col-md-6 { padding: 0 50px; }
 	#travel_bg {
 		width: 150%;
-		margin-top: -35%;
+		margin-top: -15%;
 		position: relative;
 		left: -15%;
 		z-index: 0;
@@ -236,10 +211,33 @@ p {
 	}
 }
 
+@media (min-width: 992px) {
+  .row-md-height {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .col-md-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-md-top {
+    vertical-align: top;
+  }
+  .col-md-middle {
+    vertical-align: middle;
+  }
+  .col-md-bottom {
+    vertical-align: bottom;
+  }
+}
+
 #footer {
 	text-align: center;
 	color: #fff;
 	padding: 15px;
 	background: rgba(0,0,0,.7);
 }
+
 
