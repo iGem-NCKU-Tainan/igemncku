@@ -49,14 +49,23 @@ body {
 	}
 }
 
+.sub-title{
+  padding: 0 10%;
+	font-size: 1em;
+	text-align: center;
+	font-weight: bold;
+	color: $gray;
+	margin: 15px 0;
+}
+
 
 #footer {
   width: 100%;
   height: 250px;
   text-align: center;
 
-  >a { 
-    float: right; 
+  >a {
+    float: right;
   }
 
   .footer-img {
