@@ -63,10 +63,11 @@ li {
 	background-position: center;
 	background-repeat: no-repeat;
 	#cover-text { 
-		margin-left: 56%; 
+		margin-left: 55%; 
+		width: 37%;
 		padding: 20px;
 		position: absolute;
-		top: 160px;
+		top: 150px;
 		background: rgba(0,0,0,.5);
 		line-height: 60px;
 		border-radius: 10px;
@@ -89,6 +90,7 @@ li {
 		}
 		@media all and (max-width: 767px) {
 			margin: 0 5%;
+			width: auto;
 			top: 80px;
 		}
 	}
