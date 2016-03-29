@@ -3,7 +3,6 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden;
   color: $font-color;
   -webkit-font-smoothing: antialiased;
   background: $bg-color;
@@ -35,6 +34,7 @@ li {
 }
 
 .container-fluid {
+  overflow-x: hidden;
 	&>div{ margin:0; }
   width: 100%;
 	margin: 0;

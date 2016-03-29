@@ -3,7 +3,7 @@ $(document).ready( function() {
 	$("#buttonCover").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
-	    $('html, body').animate({ scrollTop: 0 }, 1000);
+	  $('html, body').animate({ scrollTop: 0 }, 1000);
 	});
 	$("#buttonIntro").on('click',function(e) {
 		e.stopPropagation();
@@ -26,7 +26,7 @@ $(document).ready( function() {
 	    $('html, body').animate({ scrollTop: $("#apply").offset().top-navH }, 1000);
 	});
 	$(window).scroll( function(){
-		var t=document.documentElement.scrollTop || document.body.scrollTop;
+		var t= $(document).scrollTop();//document.documentElement.scrollTop || document.body.scrollTop;
 		var INTRO=$("#intro").offset().top-navH;
 		var AGENDA=$("#agenda").offset().top-navH;
 		var TRAVEL=$("#travel").offset().top-navH;
