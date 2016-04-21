@@ -42,10 +42,22 @@
 			"img":"/images/SpecialThanks/SpecialThanks3.png"
 		},
 		{
+			"Name":"張志涵",
+			"現職":"成功大學研究總中心副主任",
+			"學歷":"Rice University 機械工程博士",
+			"img":""
+		},
+		{
 			"Name":"葉靜怡",
 			"現職":"成功大學外文系教師",
 			"學歷":"劍橋大學第二語言教育研究哲學　碩士",
 			"img":"/images/SpecialThanks/SpecialThanks4.png"
+		},
+		{
+			"Name":"邱繼正",
+			"現職":"成功大學化工系助理教授",
+			"學歷":"University of Texas at Dallas 化學　博士",
+			"img":"/images/SpecialThanks/SpecialThanks5.png"
 		}
 	],
 
