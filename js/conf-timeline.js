@@ -293,8 +293,8 @@ $(document).ready(function() {
 				section: 'closing',
 				textColor: '#333',
 				backgroundColor: '#6ac1b3',
-				start: '2016-08-12T14:00:00+08:00',
-				end:   '2016-08-12T16:30:00+08:00'
+				start: '2016-08-12T15:00:00+08:00',
+				end:   '2016-08-12T18:00:00+08:00'
 			},
 			{
 				title: 'Farewell Dinner',
@@ -311,6 +311,5 @@ $(document).ready(function() {
 		eventMouseover: function(event){
 			if(event.section) $(this).css('cursor','pointer');
 		}
-  })
+	})
 });
-
