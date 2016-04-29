@@ -299,8 +299,6 @@ $(document).ready(function() {
 			{
 				title: 'Farewell Dinner',
 				section: 'closing',
-				textColor: '#333',
-				backgroundColor: '#6ac1b3',
 				start: '2016-08-12T18:00:00+08:00',
 				end:   '2016-08-12T21:00:00+08:00'
 			}
