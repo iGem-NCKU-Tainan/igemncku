@@ -2,31 +2,31 @@
 @import "./_nav-conf";
 
 html, body {
-  width: 100%;
-  color: $font-color;
-  -webkit-font-smoothing: antialiased;
-  background: $bg-color;
-  font-family: Helvetica, "微軟雅黑","Microsoft YaHei", 'sans-serif';
-  a {
-    &:hover {
-      opacity: 0.8;
+	width: 100%;
+	color: $font-color;
+	-webkit-font-smoothing: antialiased;
+	background: $bg-color;
+	font-family: Helvetica, "微軟雅黑","Microsoft YaHei", 'sans-serif';
+	a {
+		&:hover {
+			opacity: 0.8;
 		}
-  }
+	}
 }
 
 h1,
 h4 {
-  color: #333;
-  font-weight: 600;
+	color: #333;
+	font-weight: 600;
 }
 
 .gray-bg {
-  background-color: #F6F4F5;
+	background-color: #F6F4F5;
 }
 
 p {
 	font-size: 18px;
-  padding: 10px;
+	padding: 10px;
 }
 
 li {
@@ -34,25 +34,25 @@ li {
 }
 
 .container-fluid {
-  overflow-x: hidden;
+	overflow-x: hidden;
 	&>div{ margin:0; }
-  width: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 .container {
-  padding: 50px 0;
+	padding: 50px 0;
 }
 
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .section-heading {
-  text-transform: uppercase;
-  margin-bottom: 50px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
 }
 
 
@@ -62,8 +62,8 @@ li {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	#cover-text { 
-		margin-left: 55%; 
+	#cover-text {
+		margin-left: 55%;
 		width: 37%;
 		padding: 20px;
 		position: absolute;
@@ -100,7 +100,7 @@ li {
 	background-color: $bg-gray;
 	padding: 50px 10%;
 
-	div { 
+	div {
 		padding: 20px 0;
 	}
 
@@ -108,7 +108,7 @@ li {
 		margin: 0 10%;
 		width: 80%;
 	}
-	
+
 	.top-img>div {
 		width: 100%;
 		text-align: center;
@@ -130,13 +130,17 @@ li {
 			color: $subtitle-color;
 			font-size: 70px;
 		}
+		.teamnum3 {
+			font-size: 20px;
+			display: block
+		}
 	}
 }
 
 #agenda {
 	padding: 150px 0 0;
-	#calendar { 
-		padding: 50px 5% 150px; 
+	#calendar {
+		padding: 50px 5% 150px;
 		.fc-time { font-size: 12px; }
 		.fc-title { font-size: 14px; }
 	}
@@ -147,7 +151,7 @@ li {
 		background-position: center;
 		background-size: cover;
 		blockquote {}
-		&>div>div { 
+		&>div>div {
 			width: 80%;
 			margin: 0 auto;
 			padding: 10px 0;
@@ -168,7 +172,7 @@ li {
 		}
 	}
 	&>.row {
-  	padding: 40px 0;
+		padding: 40px 0;
 	}
 	@media all and (max-width: 991px) {
 		.col-md-6 { padding: 0 50px; }
@@ -198,8 +202,8 @@ li {
 		text-align: center;
 		background: none;
 		box-shadow:0 0 15px 0 rgba(0,200,150,.5),inset 0 0 15px 0 rgba(0,200,150,.5);
-		p { 
-			font-size: 1.2em; 
+		p {
+			font-size: 1.2em;
 			margin: 20px 0;
 		}
 		button>a	{
@@ -214,25 +218,25 @@ li {
 }
 
 @media (min-width: 992px) {
-  .row-md-height {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-  }
-  .col-md-height {
-    display: table-cell;
-    float: none;
-    height: 100%;
-  }
-  .col-md-top {
-    vertical-align: top;
-  }
-  .col-md-middle {
-    vertical-align: middle;
-  }
-  .col-md-bottom {
-    vertical-align: bottom;
-  }
+	.row-md-height {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+	.col-md-height {
+		display: table-cell;
+		float: none;
+		height: 100%;
+	}
+	.col-md-top {
+		vertical-align: top;
+	}
+	.col-md-middle {
+		vertical-align: middle;
+	}
+	.col-md-bottom {
+		vertical-align: bottom;
+	}
 }
 
 #footer {
@@ -241,5 +245,3 @@ li {
 	padding: 15px;
 	background: rgba(0,0,0,.7);
 }
-
-
