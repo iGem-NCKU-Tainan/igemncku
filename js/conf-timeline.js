@@ -14,14 +14,14 @@ var createFC = function(){
 			{
 				title: 'Airport pick-up',
 				start: '2016-08-08T14:00:00+08:00',
-				end:   '2016-08-08T16:00:00+08:00'
+				end:   '2016-08-08T17:00:00+08:00'
 			},
 			{
 				title: 'Opening Ceremony',
 				section: 'open',
 				textColor: '#333',
 				backgroundColor: '#6ac1b3',
-				start: '2016-08-08T16:00:00+08:00',
+				start: '2016-08-08T17:00:00+08:00',
 				end:   '2016-08-08T22:00:00+08:00'
 			},
 			{
@@ -85,7 +85,7 @@ var createFC = function(){
 				section: 'workshop',
 				textColor: '#333',
 				backgroundColor: '#6ac1b3',
-				start: '2016-08-09T15:00:00+08:00',
+				start: '2016-08-09T15:30:00+08:00',
 				end:   '2016-08-09T18:15:00+08:00'
 			},
 			{
@@ -155,8 +155,8 @@ var createFC = function(){
 				end:   '2016-08-10T15:00:00+08:00'
 			},
 			{
-				title: 'Campus Tour',
-				section: 'campus-tour',
+				title: 'Round Table & Tea Time',
+				section: 'round-table',
 				textColor: '#333',
 				backgroundColor: '#6ac1b3',
 				start: '2016-08-10T15:00:00+08:00',
@@ -229,8 +229,8 @@ var createFC = function(){
 				end:   '2016-08-11T15:00:00+08:00'
 			},
 			{
-				title: 'Round Table',
-				section: 'round-table',
+				title: 'Campus Tour',
+				section: 'campus-tour',
 				textColor: '#333',
 				backgroundColor: '#6ac1b3',
 				start: '2016-08-11T15:00:00+08:00',
@@ -257,21 +257,12 @@ var createFC = function(){
 				start: '2016-08-12T09:00:00+08:00',
 				end:   '2016-08-12T09:30:00+08:00'
 			},
-			{
-				id: 2,
-				title: 'Project Presentation',
-				section: 'team-proj',
-				textColor: '#333',
-				backgroundColor: '#6ac1b3',
-				start: '2016-08-12T09:30:00+08:00',
-				end:   '2016-08-12T10:20:00+08:00'
-			},
-			{
-				id: 3,
-				title: 'Poster',
-				start: '2016-08-12T10:30:00+08:00',
-				end:   '2016-08-12T11:00:00+08:00'
-			},
+            {
+                id: 3,
+                title: 'Poster',
+                start: '2016-08-12T09:40:00+08:00',
+                end:   '2016-08-12T10:40:00+08:00'
+            },
 			{
 				id: 2,
 				title: 'Project Presentation',
