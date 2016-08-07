@@ -1,7 +1,7 @@
-$(document).ready(function() {
+var createFC = function(){
 	var firstDay = $.fullCalendar.moment.parseZone('2016-08-08+08:00');
 	$('#calendar').fullCalendar({
-		height: 650,
+		contentHeight: 'auto',
 		header: false,
 		weekends: false,
 		defaultView: 'agendaWeek',
@@ -308,5 +308,27 @@ $(document).ready(function() {
 		eventMouseover: function(event){
 			if(event.section) $(this).css('cursor','pointer');
 		}
-	})
-});
+	});
+}
+
+//Adds a css style sheet
+addGlobalStyle = function (css) {
+	var head, style;
+	head = document.getElementsByTagName('head')[0];
+	if (!head) return;
+	style = document.createElement('style');
+	style.type = 'text/css';
+	style.innerHTML = css;
+	head.appendChild(style);
+}
+
+createFC(); //Create the first FC
+
+//Calculate size
+addGlobalStyle(".fc-slats > table {height:" + 1000 + "px}");
+
+//Destroy the fullcalendar
+$('#calendar').fullCalendar('destroy');
+//Create it again, this time with the correct CSS rules on init
+createFC();
+
